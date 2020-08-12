@@ -1,0 +1,14 @@
+* Subcircuit 2_bit_dac
+.subckt 2_bit_dac net-_r1-pad2_ net-_r4-pad1_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ 
+* c:\fossee\esim\library\subcircuitlibrary\2_bit_dac\2_bit_dac.cir
+.include switch.sub
+r1  net-_r1-pad1_ net-_r1-pad2_ 250
+r2  net-_r2-pad1_ net-_r1-pad1_ 250
+r3  net-_r3-pad1_ net-_r2-pad1_ 250
+r4  net-_r4-pad1_ net-_r3-pad1_ 250
+x1 net-_u1-pad3_ net-_r1-pad1_ net-_r2-pad1_ net-_x1-pad4_ switch
+x2 net-_u1-pad3_ net-_r3-pad1_ net-_r4-pad1_ net-_x2-pad4_ switch
+x3 net-_u1-pad4_ net-_x1-pad4_ net-_x2-pad4_ net-_u1-pad5_ switch
+* Control Statements
+
+.ends 2_bit_dac
