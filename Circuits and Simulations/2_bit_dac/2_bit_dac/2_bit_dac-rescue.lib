@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# switch-RESCUE-2_bit_dac
+#
+DEF switch-RESCUE-2_bit_dac X 0 40 Y Y 1 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "switch-RESCUE-2_bit_dac" 0 0 60 H V C CNN
+F2 "" -100 -100 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -150 100 150 -100 0 1 0 N
+X 1 1 -350 0 200 R 11 11 1 1 I
+X 2 2 0 300 200 D 11 11 1 1 I
+X 3 3 0 -300 200 U 11 11 1 1 I
+X 4 4 350 0 200 L 11 11 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
