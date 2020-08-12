@@ -1,6 +1,4 @@
-- [Heading](# Potentiometric-DAC)
-  * [Sub-heading](#sub-heading)
-    + [Sub-sub-heading](#sub-sub-heading)
+- [Potentiometric-DAC]()
 
 # Potentiometric-DAC
 This repository contains a 10-bit potentiometric digital to analog converter. Here it is tried to achieve the specifications as given by vsd corporation pvt. ltd.
