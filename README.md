@@ -4,7 +4,8 @@
 - [3. Pre-layout Simulations](#3-pre-layout-simulations)
   * [10-bit DAC Vout v/s digital code graph for 10-bit DAC](#10-bit-dac-vout-v-s-digital-code-graph-for-10-bit-dac)
 - [4. Instructions to get started with the design](#4-instructions-to-get-started-with-the-design)
-- [5. Author](#5-author)
+- [5. Future Work and Improvements](#5-future-work-and-improvements)
+- [6. Author](#6-author)
 
 
 ## 1. Introduction to Potentiometric-Digital to Analog Converter
@@ -29,8 +30,14 @@ To install eSim, go to https://esim.fossee.in/downloads and download eSim for wi
  2. Download this repository.
  3. Keep the subcircuits folder inside the eSim subcircuits folder.
  4. Store the libary files in the eSim User Library section.
- 5. Open the 10_bit_dac project in eSim kept in Ciruits and Simulations folder [here]().
- 6. Run the schematic, convert to ngspice and simulate the design to view the output.
+ 5. Open the 10_bit_dac project in eSim kept in Ciruits and Simulations [folder](https://github.com/xzlashutosh/potentiometric-DAC/tree/master/Circuits%20and%20Simulations/10_bit_dac).
+ 6. Run the schematic, convert to ngspice and simulate the design to view the output, as shown above in the figure.
+ 
+ Note: The simulation may take more than an hour to complete. Kindly keep patience.
+ 
+## 5. Future Work and Improvements 
+1. The output voltage dips when the input is in the range of 20 to 100 digital value. This can be corrected using resizing, but the simulation takes time, so hasn't been iterated to get perfect output.
+2. Calculation of INL and DNL values is currently taking a long time due to huge text data. Currently working on the data obtained.
 
-## 5. Author 
+## 6. Author 
 Ashutosh Sharma
