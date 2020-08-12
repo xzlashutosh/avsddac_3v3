@@ -1,0 +1,19 @@
+* c:\fossee\esim\library\subcircuitlibrary\switch\switch.cir
+
+.include nmos_180nm.lib
+.include pmos_180nm.lib
+m2 net-_m1-pad1_ /digital_input net-_m2-pad3_ net-_m2-pad3_ pfet W=2700n L=180n M=1
+m4 /vout net-_m1-pad1_ /vin_1 /vin_1 pfet W=2700n L=180n M=1
+m1 net-_m1-pad1_ /digital_input gnd gnd nfet W=2700n L=180n M=1
+m3 /vout net-_m1-pad1_ /vin_2 /vin_2 nfet W=2700n L=180n M=1
+v1  net-_m2-pad3_ gnd 3.3
+* u1  /digital_input /vin_1 /vin_2 /vout port
+.tran 0e-03 0e-03 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end
