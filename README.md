@@ -21,6 +21,12 @@ Go to https://esim.fossee.in/downloads and download for windows
 
 ![Alt Text](https://user-images.githubusercontent.com/36560176/90026963-a144b200-dcd5-11ea-9dce-ddd0cde65bed.png)
 
-
+# Getting started with the design
+ 1. Download eSim from the given website.
+ 2. Download this repository.
+ 3. Keep the subcircuits folder inside the eSim subcircuits folder.
+ 4. Store the libary files in the eSim User Library section.
+ 5. Open the 10_bit_dac project in eSim.
+ 6. Run the schematic, convert to ngspice and simulate the design to view the output.
 
 
