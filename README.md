@@ -12,8 +12,7 @@ The target is to design 10-bit potentiometric DAC with 3.3v analog voltage and 1
 Here I have used esim on windows operating system, which contains eeschema for building schematics of the circuits, and then to convert we have ngspice.
 The subcircuit funnction available in eSim have been used extensively in this project.
 
-## Steps to install eSim
-Go to https://esim.fossee.in/downloads and download for windows
+To install eSim, Go to https://esim.fossee.in/downloads and download for windows.
 
 # Pre-layout Simulations
 
