@@ -28,4 +28,5 @@ To install eSim, Go to https://esim.fossee.in/downloads and download for windows
  5. Open the 10_bit_dac project in eSim.
  6. Run the schematic, convert to ngspice and simulate the design to view the output.
 
-
+# Author 
+Ashutosh Sharma
