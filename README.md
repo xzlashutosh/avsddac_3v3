@@ -19,6 +19,8 @@ Go to https://esim.fossee.in/downloads and download for windows
 
 ## 10-bit DAC Vout v/s digital code graph
 
+![Alt Text](https://user-images.githubusercontent.com/36560176/90026963-a144b200-dcd5-11ea-9dce-ddd0cde65bed.png)
+
 
 
 
