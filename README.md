@@ -20,7 +20,7 @@ To install eSim, Go to https://esim.fossee.in/downloads and download for windows
 
 ![Alt Text](https://user-images.githubusercontent.com/36560176/90026963-a144b200-dcd5-11ea-9dce-ddd0cde65bed.png)
 
-# Getting started with the design
+# Instructions to get started with the design
  1. Download eSim from the given website.
  2. Download this repository.
  3. Keep the subcircuits folder inside the eSim subcircuits folder.
