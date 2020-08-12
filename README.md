@@ -1,4 +1,4 @@
-- [Potentiometric-DAC]()
+- [Potentiometric-DAC](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/README.md#potentiometric-dac)
 
 # Potentiometric-DAC
 This repository contains a 10-bit potentiometric digital to analog converter. Here it is tried to achieve the specifications as given by vsd corporation pvt. ltd.
