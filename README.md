@@ -1,8 +1,10 @@
 # Table of Contents
-[1. Introduction to Potentiometric-Digital to Analog Converter](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/README.md#introduction-to-potentiometric-dac)
-[2. Open-Source EDA tools used ](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/README.md#2-open-source-eda-tools-used)
-[3. Pre-layout Simulations](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/README.md#3-pre-layout-simulations)
-[4. Instructions to get started with the design](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/README.md#4-instructions-to-get-started-with-the-design)
+- [1. Introduction to Potentiometric-Digital to Analog Converter](#1-introduction-to-potentiometric-digital-to-analog-converter)
+- [2. Open-Source EDA tools used](#2-open-source-eda-tools-used)
+- [3. Pre-layout Simulations](#3-pre-layout-simulations)
+  * [10-bit DAC Vout v/s digital code graph for 10-bit DAC](#10-bit-dac-vout-v-s-digital-code-graph-for-10-bit-dac)
+- [4. Instructions to get started with the design](#4-instructions-to-get-started-with-the-design)
+- [5. Author](#5-author)
 
 
 # 1. Introduction to Potentiometric-Digital to Analog Converter
