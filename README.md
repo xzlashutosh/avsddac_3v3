@@ -1,6 +1,7 @@
-- [Potentiometric-DAC](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/README.md#potentiometric-dac)
+# Table of Contents
+- [Introduction to Potentiometric-DAC]()
 
-# Potentiometric-DAC
+# Introduction to Potentiometric-DAC
 This repository contains a 10-bit potentiometric digital to analog converter. Here it is tried to achieve the specifications as given by vsd corporation pvt. ltd.
 The design has been built using open-source EDA tools. For prelayout simulaions, esim is used. The library used is osu180nm library.
 
