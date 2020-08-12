@@ -29,7 +29,7 @@ To install eSim, go to https://esim.fossee.in/downloads and download eSim for wi
  2. Download this repository.
  3. Keep the subcircuits folder inside the eSim subcircuits folder.
  4. Store the libary files in the eSim User Library section.
- 5. Open the 10_bit_dac project in eSim.
+ 5. Open the 10_bit_dac project in eSim kept in Ciruits and Simulations folder [here]().
  6. Run the schematic, convert to ngspice and simulate the design to view the output.
 
 ## 5. Author 
