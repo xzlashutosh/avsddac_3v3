@@ -21,12 +21,46 @@ To install eSim, go to https://esim.fossee.in/downloads and download eSim for wi
 ## 3. Pre-layout Simulations
 
 ### Subcircuits
-1. Switch
+1. Switch Subcircuit
+
 ![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/switch.png)
 
-2. 2-Bit-DAC
+2. 2-Bit-DAC Subcircuit
+
 ![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/2-Bit_DAC.png)
 
+3. 3-Bit-DAC Subcircuit
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/3-bit_DAC.png)
+
+4. 4-Bit-DAC Subcircuit
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/4-bitDAC.png)
+
+5. 5-Bit-DAC Subcircuit
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/5_bit_dac.png)
+
+6. 6-Bit-DAC Subcircuit
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/6_bit_dac.png)
+
+7. 7-Bit-DAC Subcircuit
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/7_bit_dac.png)
+
+8. 8-Bit-DAC Subcircuit
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/8_bit_dac.png)
+
+9. 9-Bit-DAC Subcircuit
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/9_bit_dac.png)
+
+
+### 10-Bit-DAC
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/10_bit_dac.png)
 
 ### 10-bit DAC Vout v/s digital code graph for 10-bit DAC
 
