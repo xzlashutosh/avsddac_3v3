@@ -12,7 +12,7 @@
 
 ## 1. Introduction to Potentiometric-Digital to Analog Converter
 This repository presents a 10-bit potentiometric digital to analog converter. It is aimed to achieve the specifications as given by [VSD Corporation Pvt. Ltd.](https://www.vlsisystemdesign.com/ip/) These building blocks are required to convert digital data into analog data. 
-The target is to design 10-bit potentiometric DAC with 3.3v analog voltage and 1 off-chip external reference using osu180nm tech node.
+The target is to design 10-bit potentiometric DAC with 3.3v analog voltage and 1 off-chip external reference using osu180nm tech node. To know more about the DACs, go to [this](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/10-Bit%20Potentiometric%20Digital%20to%20Analog%20Converter%20with%20Off-Chip%20External%20Voltage%20Reference_Ashutosh_Sharma-.pdf) file.
 
 ## 2. Open-Source EDA tools used 
 The design has been built using open-source EDA tools. For prelayout simulaions, eSim is used. The library used is osu180nm library.
