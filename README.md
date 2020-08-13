@@ -8,7 +8,8 @@
 - [4. Instructions to get started with the design](#4-instructions-to-get-started-with-the-design)
 - [5. Future Work and Improvements](#5-future-work-and-improvements)
 - [6. Author](#6-author)
-
+- [7. Acknowledgments](#7-acknowledgments)
+- [8. Contact Information](#8-contact-information)
 
 ## 1. Introduction to Potentiometric-Digital to Analog Converter
 This repository presents a 10-bit potentiometric digital to analog converter. It is aimed to achieve the specifications as given by [VSD Corporation Pvt. Ltd.](https://www.vlsisystemdesign.com/ip/) These building blocks are required to convert digital data into analog data. 
