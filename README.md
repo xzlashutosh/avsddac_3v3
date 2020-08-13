@@ -20,6 +20,14 @@ To install eSim, go to https://esim.fossee.in/downloads and download eSim for wi
 
 ## 3. Pre-layout Simulations
 
+### Subcircuits
+1. Switch
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/switch.png)
+
+2. 2-Bit-DAC
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/2-Bit_DAC.png)
+
+
 ### 10-bit DAC Vout v/s digital code graph for 10-bit DAC
 
 ![Alt Text](https://user-images.githubusercontent.com/36560176/90026963-a144b200-dcd5-11ea-9dce-ddd0cde65bed.png)
