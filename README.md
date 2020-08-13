@@ -84,3 +84,12 @@ To install eSim, go to https://esim.fossee.in/downloads and download eSim for wi
 
 ## 6. Author 
 Ashutosh Sharma
+
+## 7. Acknowledgments
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Philipp Gühring, Software Architect, LibreSilicon Assocation
+
+## 8. Contact Information
+- Ashutosh Sharma, B.Tech, Electronics and Communication Engineering, IIITD&M Kurnool, edm17b009@iiitk.ac.in
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
+- Philipp Gühring, Software Architect, LibreSilicon Assocation, pg@futureware.at
