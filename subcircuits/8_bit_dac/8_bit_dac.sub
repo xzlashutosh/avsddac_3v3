@@ -1,0 +1,11 @@
+* Subcircuit 8_bit_dac
+.subckt 8_bit_dac net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ 
+* c:\fossee\esim\library\subcircuitlibrary\8_bit_dac\8_bit_dac.cir
+.include 7_bit_dac.sub
+.include switch.sub
+x3 net-_u1-pad10_ net-_x1-pad10_ net-_x2-pad10_ net-_u1-pad11_ switch
+x1 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad8_ net-_x1-pad8_ net-_u1-pad7_ net-_x1-pad10_ 7_bit_dac
+x2 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_x1-pad8_ net-_u1-pad9_ net-_u1-pad7_ net-_x2-pad10_ 7_bit_dac
+* Control Statements
+
+.ends 8_bit_dac

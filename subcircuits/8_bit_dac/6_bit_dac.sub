@@ -1,0 +1,11 @@
+* Subcircuit 6_bit_dac
+.subckt 6_bit_dac net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ 
+* c:\fossee\esim\library\subcircuitlibrary\6_bit_dac\6_bit_dac.cir
+.include 5_bit_dac.sub
+.include switch.sub
+x1 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad6_ net-_x1-pad6_ net-_u1-pad5_ net-_x1-pad8_ 5_bit_dac
+x2 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_x1-pad6_ net-_u1-pad7_ net-_u1-pad5_ net-_x2-pad8_ 5_bit_dac
+x3 net-_u1-pad8_ net-_x1-pad8_ net-_x2-pad8_ net-_u1-pad9_ switch
+* Control Statements
+
+.ends 6_bit_dac
