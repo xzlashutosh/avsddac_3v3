@@ -1,0 +1,18 @@
+* C:\FOSSEE\eSim\library\SubcircuitLibrary\2_bit_dac\2_bit_dac.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 08/12/20 14:06:18
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+R1  Net-_R1-Pad1_ Net-_R1-Pad2_ 250		
+R2  Net-_R2-Pad1_ Net-_R1-Pad1_ 250		
+R3  Net-_R3-Pad1_ Net-_R2-Pad1_ 250		
+R4  Net-_R4-Pad1_ Net-_R3-Pad1_ 250		
+X1  Net-_U1-Pad3_ Net-_R1-Pad1_ Net-_R2-Pad1_ Net-_X1-Pad4_ switch		
+X2  Net-_U1-Pad3_ Net-_R3-Pad1_ Net-_R4-Pad1_ Net-_X2-Pad4_ switch		
+X3  Net-_U1-Pad4_ Net-_X1-Pad4_ Net-_X2-Pad4_ Net-_U1-Pad5_ switch		
+U1  Net-_R1-Pad2_ Net-_R4-Pad1_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ PORT		
+
+.end
