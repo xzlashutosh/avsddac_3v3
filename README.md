@@ -65,7 +65,7 @@ To install eSim, go to https://esim.fossee.in/downloads and download eSim for wi
 
 ![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/10_bit_dac.png)
 
-The source details are - 
+#### The source details are - 
 
 v1 - PULSE(0 1.8 0.1m 60p 60p 0.1m 0.2m)
 
