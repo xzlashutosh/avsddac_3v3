@@ -4,6 +4,7 @@
 - [3. Pre-layout Simulations](#3-pre-layout-simulations)
   * [Subcircuits](#subcircuits)
   * [10-Bit-DAC](#10-bit-dac)
+    + [The source details are -](#the-source-details-are--)
   * [10-bit DAC Vout v/s digital code graph for 10-bit DAC](#10-bit-dac-vout-v-s-digital-code-graph-for-10-bit-dac)
 - [4. Instructions to get started with the design](#4-instructions-to-get-started-with-the-design)
 - [5. Future Work and Improvements](#5-future-work-and-improvements)
