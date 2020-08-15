@@ -68,15 +68,25 @@ To install eSim, go to https://esim.fossee.in/downloads and download eSim for wi
 The source details are - 
 
 v1 - PULSE(0 1.8 0.1m 60p 60p 0.1m 0.2m)
+
 v2 - PULSE(0 1.8 0.2m 60p 60p 0.2m 0.4m)
+
 v3 - PULSE(0 1.8 0.4m 60p 60p 0.4m 0.8m)
+
 v4 - PULSE(0 1.8 0.8m 60p 60p 0.8m 1.6m)
+
 v5 - PULSE(0 1.8 1.6m 60p 60p 1.6m 3.2m)
+
 v6 - PULSE(0 1.8 3.2m 60p 60p 3.2m 6.4m)
+
 v7 - PULSE(0 1.8 6.4m 60p 60p 6.4m 12.8m)
+
 v8 - PULSE(0 1.8 12.8m 60p 60p 12.8m 25.6m)
+
 v10 - PULSE(0 1.8 25.6m 60p 60p 25.6m 51.2m)
+
 v11 - PULSE(0 1.8 51.2m 60p 60p 51.2m 102.4m)
+
 
 ### 10-bit DAC Vout v/s digital code graph for 10-bit DAC
 
