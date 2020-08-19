@@ -1,0 +1,21 @@
+Circuit: * C:\Users\ashut\Desktop\DAC\work\Potentiometric DAC\10-bit-dac\Draft1.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Jul 27 11:00:25 2020
+Total elapsed time: 0.170 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2117
+traniter = 2100
+tranpoints = 1051
+accept = 1049
+rejected = 2
+matrix size = 14
+fillins = 6
+solver = Normal
+Matrix Compiler1: 948 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 1.21 KB object code size  0.1/0.1/[0.1]
+
