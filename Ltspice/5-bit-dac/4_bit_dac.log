@@ -1,0 +1,38 @@
+Circuit: * C:\Users\ashut\Desktop\DAC\work\my\4-bit-dac\4_bit_dac.asc
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Limiting rise time of source v§d2 to 0.0004
+Limiting fall time of source v§d2 to 0.0004
+Limiting rise time of source v§d3 to 0.0008
+Limiting fall time of source v§d3 to 0.0008
+Limiting rise time of source v§d1 to 0.0002
+Limiting fall time of source v§d1 to 0.0002
+Limiting rise time of source v§d0 to 0.0001
+Limiting fall time of source v§d0 to 0.0001
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sun Jul 26 13:11:07 2020
+Total elapsed time: 1.142 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 12222
+traniter = 12210
+tranpoints = 5871
+accept = 4460
+rejected = 1411
+matrix size = 88
+fillins = 80
+solver = Normal
+Thread vector: 70.8/42.2[8] 29.7/15.2[8] 11.5/4.3[8] 0.8/6.5[1]  2592/500
+Matrix Compiler1: 12.44 KB object code size  18.2/5.7/[1.6]
+Matrix Compiler2: 11.06 KB object code size  3.3/4.7/[0.8]
+

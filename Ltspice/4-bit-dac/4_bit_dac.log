@@ -1,0 +1,80 @@
+Circuit: * D:\DAC\DAC\Potentiometric DAC different kind of switch - koi matlab ka nahi hai ye wala- ---- par ab hai. chota switch, no resizing, ek resistor uda diya, output best abhi tak ka - alag try naya 1236 - Copy\4-bit-dac\4_bit_dac.asc
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+Heightened Def Con from 0.0001 ++to 0.0001
+Heightened Def Con from 0.0001 to 0.0001
+Heightened Def Con from 0.0002 to 0.0002
+Heightened Def Con from 0.0002 to 0.0002
+Heightened Def Con from 0.0002 +++++++++++++++++++++++++to 0.0002
+Heightened Def Con from 0.0002 to 0.000200013
+Heightened Def Con from 0.0003 to 0.000300014
+Heightened Def Con from 0.0004 to 0.0004
+Heightened Def Con from 0.0004 to 0.000400002
+Heightened Def Con from 0.000400002 ++++++++++++++++++++++++to 0.000400002
+Heightened Def Con from 0.000400002 ++++++++++++++++++to 0.000400002
+Heightened Def Con from 0.000400002 to 0.000400002
+Heightened Def Con from 0.000400002 to 0.000400017
+Heightened Def Con from 0.0005 to 0.000500003
+Heightened Def Con from 0.0006 to 0.000600014
+Heightened Def Con from 0.0007 to 0.000700014
+Heightened Def Con from 0.0008 ++++++++++++++++++++++++++to 0.0008
+Heightened Def Con from 0.0008 to 0.0008
+Heightened Def Con from 0.0008 to 0.000800001
+Heightened Def Con from 0.000800001 to 0.000800001
+Heightened Def Con from 0.000800001 +++++++++++++++++++++++++++to 0.000800011
+Heightened Def Con from 0.0009 to 0.000900003
+Heightened Def Con from 0.001 to 0.00100001
+Heightened Def Con from 0.0011 to 0.00110001
+Heightened Def Con from 0.0012 to 0.0012
+Heightened Def Con from 0.0012 to 0.00120002
+Heightened Def Con from 0.0013 to 0.0013
+Heightened Def Con from 0.0014 to 0.00140002
+Heightened Def Con from 0.0015 to 0.00150001
+Heightened Def Con from 0.0016 +++++++++++++++++++++++++++to 0.00160001
+Heightened Def Con from 0.0017 to 0.0017
+Heightened Def Con from 0.0018 to 0.00180001
+Heightened Def Con from 0.0019 to 0.00190001
+Heightened Def Con from 0.002 to 0.002
+Heightened Def Con from 0.002 to 0.00200002
+Heightened Def Con from 0.0021 to 0.0021
+Heightened Def Con from 0.0022 to 0.00220001
+Heightened Def Con from 0.0023 to 0.00230001
+Heightened Def Con from 0.0024 to 0.0024
+Heightened Def Con from 0.0024 to 0.0024
+Heightened Def Con from 0.0024 to 0.0024
+Heightened Def Con from 0.0024 to 0.00240002
+Heightened Def Con from 0.0025 to 0.0025
+Heightened Def Con from 0.0026 to 0.00260001
+Heightened Def Con from 0.0027 to 0.00270001
+Heightened Def Con from 0.0028 to 0.0028
+Heightened Def Con from 0.0028 +++++++++++++++++++++++++++to 0.00280001
+Heightened Def Con from 0.0029 to 0.0029
+Heightened Def Con from 0.003 to 0.00300002
+Heightened Def Con from 0.0031 to 0.00310001
+
+Date: Wed Aug 19 16:20:54 2020
+Total elapsed time: 1.249 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 51445
+traniter = 51428
+tranpoints = 10476
+accept = 6962
+rejected = 3740
+matrix size = 85
+fillins = 72
+solver = Normal
+Thread vector: 31.4/12.3[6] 6.4/3.7[6] 2.4/4.8[1] 0.4/2.2[1]  2592/500
+Matrix Compiler1: 11.26 KB object code size  2.0/1.0/[0.6]
+Matrix Compiler2: 9.22 KB object code size  0.8/1.1/[0.5]
+
