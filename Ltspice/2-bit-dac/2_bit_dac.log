@@ -1,0 +1,32 @@
+Circuit: * D:\DAC\DAC\Potentiometric DAC different kind of switch - koi matlab ka nahi hai ye wala- ---- par ab hai. chota switch, no resizing, ek resistor uda diya, output best abhi tak ka - alag try naya 1236 - Copy\2-bit-dac\2_bit_dac.asc
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+Heightened Def Con from 0.0001 to 0.0001
+Heightened Def Con from 0.0002 to 0.0002
+Heightened Def Con from 0.0003 to 0.0003
+
+Date: Wed Aug 19 16:17:37 2020
+Total elapsed time: 0.255 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 5201
+traniter = 5187
+tranpoints = 1892
+accept = 1671
+rejected = 224
+matrix size = 21
+fillins = 4
+solver = Normal
+Matrix Compiler1: 1.49 KB object code size  0.9/0.2/[0.1]
+Matrix Compiler2: off  [0.2]/0.2/0.2
+
