@@ -1,15 +1,5 @@
 ## Table of Contents
-- [1. Introduction to Potentiometric-Digital to Analog Converter](#1-introduction-to-potentiometric-digital-to-analog-converter)
-- [2. Open-Source EDA tools used](#2-open-source-eda-tools-used)
-- [3. Pre-layout Simulations](#3-pre-layout-simulations)
-  * [10-Bit-DAC](#10-bit-dac)
-    + [The source details are -](#the-source-details-are--)
-  * [10-bit DAC Vout v/s digital code graph for 10-bit DAC](#10-bit-dac-vout-v-s-digital-code-graph-for-10-bit-dac)
-- [4. Instructions to get started with the design](#4-instructions-to-get-started-with-the-design)
-- [5. Future Work and Improvements](#5-future-work-and-improvements)
-- [6. Author](#6-author)
-- [7. Acknowledgments](#7-acknowledgments)
-- [8. Contact Information](#8-contact-information)
+
 
 ## 1. Introduction to Potentiometric-Digital to Analog Converter
 This repository presents a 10-bit potentiometric digital to analog converter. It is aimed to achieve the specifications as given by [VSD Corporation Pvt. Ltd.](https://www.vlsisystemdesign.com/ip/) These building blocks are required to convert digital data into analog data. 
@@ -48,12 +38,28 @@ v10 - PULSE(0 1.8 25.6m 60p 60p 25.6m 51.2m)
 
 v11 - PULSE(0 1.8 51.2m 60p 60p 51.2m 102.4m)
 
-
 ### 10-bit DAC Vout v/s digital code graph for 10-bit DAC
 
-![Alt Text]()
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/output%20waveform.JPG)
 
-## 4. Instructions to get started with the design
+## 4. INL and DNL Value Calculation
+
+### INL(LSB) v/s Digital Code
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/INL(LSB).png)
+
+### DNL(LSB) v/s Digital Code
+
+![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/DNL(LSB).png)
+
+
+| Parameter| Pre-layout (LSB)| 
+| :---:  | :-: |
+|DNL| 1.924133959 LSB to -15.34069384 LSB|
+|INL| 1.585746199 LSB to -15.58299721 LSB|
+
+
+## 5. Instructions to get started with the design
  1. Download eSim from the given [website](https://esim.fossee.in/downloads).
  2. Download this repository.
  3. Keep the contents of [subcircuits folder](https://github.com/xzlashutosh/potentiometric-DAC/tree/master/subcircuits) inside the eSim subcircuits folder (C:\FOSSEE\eSim\library\SubcircuitLibrary).
@@ -63,10 +69,6 @@ v11 - PULSE(0 1.8 51.2m 60p 60p 51.2m 102.4m)
  
  Note: The simulation may take more than an hour to complete. Kindly keep patience.
  
-## 5. Future Work and Improvements 
-1. The output voltage dips when the input is in the range of 20 to 100 digital value. This can be corrected using resizing, but the simulation takes time, so hasn't been iterated to get perfect output.
-2. Calculation of INL and DNL values is currently taking a long time due to huge text data. Currently working on the data obtained.
-
 ## 6. Author 
 Ashutosh Sharma
 
