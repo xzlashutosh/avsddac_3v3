@@ -2,7 +2,6 @@
 - [1. Introduction to Potentiometric-Digital to Analog Converter](#1-introduction-to-potentiometric-digital-to-analog-converter)
 - [2. Open-Source EDA tools used](#2-open-source-eda-tools-used)
 - [3. Pre-layout Simulations](#3-pre-layout-simulations)
-  * [Subcircuits](#subcircuits)
   * [10-Bit-DAC](#10-bit-dac)
     + [The source details are -](#the-source-details-are--)
   * [10-bit DAC Vout v/s digital code graph for 10-bit DAC](#10-bit-dac-vout-v-s-digital-code-graph-for-10-bit-dac)
@@ -23,45 +22,6 @@ Here I have used esim on windows operating system, which contains all the tools 
 To install eSim, go to https://esim.fossee.in/downloads and download eSim for windows to run and view this project.
 
 ## 3. Pre-layout Simulations
-
-### Subcircuits
-1. Switch Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/switch.png)
-
-2. 2-Bit-DAC Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/2-Bit_DAC.png)
-
-3. 3-Bit-DAC Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/3-bit_DAC.png)
-
-4. 4-Bit-DAC Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/4-bitDAC.png)
-
-5. 5-Bit-DAC Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/5_bit_dac.png)
-
-6. 6-Bit-DAC Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/6_bit_dac.png)
-
-7. 7-Bit-DAC Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/7_bit_dac.png)
-
-8. 8-Bit-DAC Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/8_bit_dac.png)
-
-9. 9-Bit-DAC Subcircuit
-
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/9_bit_dac.png)
-
-
 ### 10-Bit-DAC
 
 ![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/10_bit_dac.png)
@@ -91,7 +51,7 @@ v11 - PULSE(0 1.8 51.2m 60p 60p 51.2m 102.4m)
 
 ### 10-bit DAC Vout v/s digital code graph for 10-bit DAC
 
-![Alt Text](https://user-images.githubusercontent.com/36560176/90026963-a144b200-dcd5-11ea-9dce-ddd0cde65bed.png)
+![Alt Text]()
 
 ## 4. Instructions to get started with the design
  1. Download eSim from the given [website](https://esim.fossee.in/downloads).
