@@ -55,8 +55,8 @@ v11 - PULSE(0 1.8 51.2m 60p 60p 51.2m 102.4m)
 
 | Parameter| Pre-layout (LSB)| 
 | :---:  | :-: |
-|DNL| 1.924133959 LSB to -15.34069384 LSB|
-|INL| 1.585746199 LSB to -15.58299721 LSB|
+|DNL| -0.999893345 LSB to 2.03065020 LSB|
+|INL| 0.527216491 LSB to -1.953038429 LSB|
 
 
 ## 5. Instructions to get started with the design
