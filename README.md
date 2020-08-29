@@ -40,7 +40,7 @@ v11 - PULSE(0 1.8 51.2m 60p 60p 51.2m 102.4m)
 
 ### 10-bit DAC Vout v/s digital code graph for 10-bit DAC
 
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/output%20waveform.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/perfectLayouts/2BitDac/Capture2.JPG)
 
 ## 4. INL and DNL Value Calculation
 
