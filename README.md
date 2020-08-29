@@ -46,11 +46,11 @@ v11 - PULSE(0 1.8 51.2m 60p 60p 51.2m 102.4m)
 
 ### INL(LSB) v/s Digital Code
 
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/INL(LSB).png)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/perfectLayouts/2BitDac/INL(LSB).png)
 
 ### DNL(LSB) v/s Digital Code
 
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/DNL(LSB).png)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/perfectLayouts/2BitDac/DNL(LSB).png)
 
 
 | Parameter| Pre-layout (LSB)| 
