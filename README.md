@@ -1,5 +1,17 @@
 ## Table of Contents
-
+- [1. Introduction to Potentiometric-Digital to Analog Converter](#1-introduction-to-potentiometric-digital-to-analog-converter)
+- [2. Open-Source EDA tools used](#2-open-source-eda-tools-used)
+- [3. Pre-layout Simulations](#3-pre-layout-simulations)
+  * [10-Bit-DAC](#10-bit-dac)
+    + [The source details are -](#the-source-details-are--)
+  * [10-bit DAC Vout v/s digital code graph for 10-bit DAC](#10-bit-dac-vout-v-s-digital-code-graph-for-10-bit-dac)
+- [4. INL and DNL Value Calculation](#4-inl-and-dnl-value-calculation)
+  * [INL(LSB) v/s Digital Code](#inl-lsb--v-s-digital-code)
+  * [DNL(LSB) v/s Digital Code](#dnl-lsb--v-s-digital-code)
+- [5. Instructions to get started with the design](#5-instructions-to-get-started-with-the-design)
+- [6. Author](#6-author)
+- [7. Acknowledgments](#7-acknowledgments)
+- [8. Contact Information](#8-contact-information)
 
 ## 1. Introduction to Potentiometric-Digital to Analog Converter
 This repository presents a 10-bit potentiometric digital to analog converter. It is aimed to achieve the specifications as given by [VSD Corporation Pvt. Ltd.](https://www.vlsisystemdesign.com/ip/) These building blocks are required to convert digital data into analog data. 
