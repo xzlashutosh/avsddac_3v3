@@ -58,7 +58,7 @@ I have used [eSim](https://esim.fossee.in/downloads) to build schematic, [ngSpic
 #### Modification done in osu180nm to make use of capacitor as a device - 
  add 
  
- device capacitor None glass poly,pc 9000 73000 
+        device capacitor None glass poly,pc 9000 73000 
 
 in the #devices section inside the osu180nm.tech node.
 
@@ -66,6 +66,22 @@ in the #devices section inside the osu180nm.tech node.
 | :---:  | :-: | :-: |
 |DNL| -0.999893345 LSB to 2.03065020 LSB | -1.182952606 LSB to 2.380283181 LSB |
 |INL| -1.953038429 LSB to 0.527216491 LSB| -3.698306813 LSB to 0.181125461 LSB |
+
+| Parameter| Description| Min | Type | Max | Unit | Condition |
+| :---:  | :-: | :-: | :-: | :---:  | :-: | :-: |
+|RL|Load resistance| 50|||Mohm|T=-40 to 85C|
+|CL|Load capacitance|||1|pF|T=-40 to 85C|
+|VDDA|Analog supply| |3.3||V|T=-40 to 85C|
+|VDD|Digital supply voltage||1.8||V|T=-40 to 85C|
+|VREFH|Reference voltage high|||3.3|V|T=-40 to 85C|
+|VREFL|Reference voltage low|0|||V|T=-40 to 85C|
+|RES|Resolution| |10||bit|T=27C|
+|INL|Integral Non-linearity||9.6||LSB|T=27C|
+|DNL|Differential non-linearity||-1.6 to +0.6||LSB|T=27C|
+
+1) Integral nonlinearity (INL), also referred to as linearity error, is the maximum deviation of the output from the line between zero and full scale excluding the effects of zero code and full-scale errors. The INL is calculated for code 0-63. 
+2) The differential nonlinearity (DNL), sometimes referred to as differential error, is the difference between the measured and ideal 1LSB amplitude change of any two adjacent codes. The DNL is calculated for code 0-63. 
+
 
 ## 6. Instructions to get started with the design
 ### For Pre-Layout Simulation - 
