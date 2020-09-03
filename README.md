@@ -17,13 +17,13 @@ The problem of largness of the circuit is reduced by building hierarchical subci
 Have a look at the simplified architecture for potentiometric-DAC given below
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png">
+   src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png">
 </p>
 
 Given below is the block diagram of the DAC - 
 
 <p align="center">
-  <src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png">
+  src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png">
 </p>
 
 
