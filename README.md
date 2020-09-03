@@ -76,8 +76,7 @@ in the #devices section inside the osu180nm.tech node.
 |VREFH|Reference voltage high|||3.3|V|T=-40 to 85C|
 |VREFL|Reference voltage low|0|||V|T=-40 to 85C|
 |RES|Resolution| |10||bit|T=27C|
-|INL|Integral Non-linearity|| -3.698306813 to 0.181125461 |LSB|T=27C|
-|DNL|Differential non-linearity|| -1.182952606 to 2.380283181 |LSB|T=27C|
+
 
 1) Integral nonlinearity (INL), also referred to as linearity error, is the maximum deviation of the output from the line between zero and full scale excluding the effects of zero code and full-scale errors. The INL is calculated for code 0-63. 
 2) The differential nonlinearity (DNL), sometimes referred to as differential error, is the difference between the measured and ideal 1LSB amplitude change of any two adjacent codes. The DNL is calculated for code 0-63. 
