@@ -7,6 +7,50 @@ A DAC is a building block required to convert digital data into analog.
 
 ## Table of Contents
 
+- [1. Introduction to Potentiometric Digital to Analog Converter](#1-introduction-to-potentiometric-digital-to-analog-converter)
+- [2. Potentiometric DAC Architecture Design](#2-potentiometric-dac-architecture-design)
+- [3. EDA Tools Used](#3-eda-tools-used)
+- [4. Pre-layout and Simulations](#4-pre-layout-and-simulations)
+  * [A. Switch](#a-switch)
+  * [B. 2-Bit DAC subcircuit](#b-2-bit-dac-subcircuit)
+  * [C. 3-Bit DAC subcircuit](#c-3-bit-dac-subcircuit)
+  * [D. 4-Bit DAC subcircuit](#d-4-bit-dac-subcircuit)
+  * [E. 5-Bit DAC subcircuit](#e-5-bit-dac-subcircuit)
+  * [F. 6-Bit DAC subcircuit](#f-6-bit-dac-subcircuit)
+  * [G. 7-Bit DAC subcircuit](#g-7-bit-dac-subcircuit)
+  * [H. 8-Bit DAC subcircuit](#h-8-bit-dac-subcircuit)
+  * [I. 9-Bit DAC subcircuit](#i-9-bit-dac-subcircuit)
+  * [J. 10-Bit-DAC](#j-10-bit-dac)
+    + [The source details at Vref+ = 3.3V and Vref- = 0V are given [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/SourceDetails.txt).](#the-source-details-at-vref----33v-and-vref----0v-are-given--here--https---githubcom-xzlashutosh-avsddac-3v3-blob-master-pre-layout-20and-20simulation-sourcedetailstxt-)
+  * [Vout v/s Digital Code Graph for 10-Bit DAC](#vout-v-s-digital-code-graph-for-10-bit-dac)
+  * [INL(LSB) v/s Digital Code Graph for 10-Bit DAC](#inl-lsb--v-s-digital-code-graph-for-10-bit-dac)
+  * [DNL(LSB) v/s Digital Code Graph for 10-Bit DAC](#dnl-lsb--v-s-digital-code-graph-for-10-bit-dac)
+  * [For pre-layout simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-pre-layout-simulation--).](#for-pre-layout-simulation-please-follow--this--https---githubcom-xzlashutosh-avsddac-3v3-for-pre-layout-simulation---)
+- [5. Layout and Simulations](#5-layout-and-simulations)
+  * [A. Switch Layout](#a-switch-layout)
+  * [B. Resistor Layout](#b-resistor-layout)
+  * [C. Capacitor Layout](#c-capacitor-layout)
+    + [Modification done in osu180nm to make use of capacitor as a device -](#modification-done-in-osu180nm-to-make-use-of-capacitor-as-a-device--)
+  * [D. 2-Bit DAC Subcircuit Layout](#d-2-bit-dac-subcircuit-layout)
+  * [E. 3-Bit DAC Subcircuit Layout](#e-3-bit-dac-subcircuit-layout)
+  * [F. 4-Bit DAC Subcircuit Layout](#f-4-bit-dac-subcircuit-layout)
+  * [G. 5-Bit DAC Subcircuit Layout](#g-5-bit-dac-subcircuit-layout)
+  * [H. 6-Bit DAC Subcircuit Layout](#h-6-bit-dac-subcircuit-layout)
+  * [I. 7-Bit DAC Subcircuit Layout](#i-7-bit-dac-subcircuit-layout)
+  * [J. 8-Bit DAC Subcircuit Layout](#j-8-bit-dac-subcircuit-layout)
+  * [K. 9-Bit DAC Subcircuit Layout](#k-9-bit-dac-subcircuit-layout)
+  * [L. 10-Bit-DAC Layout](#l-10-bit-dac-layout)
+    + [The source details are [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/toPasteInEnd.txt).](#the-source-details-are--here--https---githubcom-xzlashutosh-avsddac-3v3-blob-master-layout-20and-20simulation-topasteinendtxt-)
+  * [Vout v/s Digital Code Graph for 10-Bit DAC](#vout-v-s-digital-code-graph-for-10-bit-dac-1)
+  * [INL(LSB) v/s Digital Code Graph for 10-Bit DAC](#inl-lsb--v-s-digital-code-graph-for-10-bit-dac-1)
+  * [DNL(LSB) v/s Digital Code Graph for 10-Bit DAC](#dnl-lsb--v-s-digital-code-graph-for-10-bit-dac-1)
+  * [For post-layout simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-post-layout-simulation--).](#for-post-layout-simulation-please-follow--this--https---githubcom-xzlashutosh-avsddac-3v3-for-post-layout-simulation---)
+- [6. Specification List](#6-specification-list)
+- [7. Instructions to get started with the design](#7-instructions-to-get-started-with-the-design)
+  * [For Pre-Layout Simulation -](#for-pre-layout-simulation--)
+  * [For Post-Layout Simulation -](#for-post-layout-simulation--)
+- [8. Author](#8-author)
+- [9. Acknowledgments](#9-acknowledgments)
 
 ## 2. Potentiometric DAC Architecture Design
 
@@ -17,7 +61,7 @@ The problem of largness of the circuit is reduced by building hierarchical subci
 Have a look at the simplified architecture for potentiometric-DAC given below
 
 <p align="center">
-  <img width="7000" height="600" src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png">
+  <img width="7000" height="700" src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png">
 </p>
 
 
@@ -25,7 +69,7 @@ Have a look at the simplified architecture for potentiometric-DAC given below
 Given below is the block diagram of the DAC - 
 
 <p align="center">
-  <img width="7000" height="600" src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png">
+  <img width="7000" height="700" src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png">
 </p>
 
 
