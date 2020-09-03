@@ -10,17 +10,22 @@ A DAC is a building block required to convert digital data into analog.
 
 ## 2. Potentiometric DAC Architecture Design
 
-The basic idea is to divide the voltage in N different voltage value in the range of Vref+ and Vref-. The design used to achieve it is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltge to the output.
+The basic idea is to divide the voltage in N different voltage values in the range of Vref+ and Vref- for an N-Bit DAC. The design used here to achieve this is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltge to the output.
 
 The problem of largness of the circuit is reduced by building hierarchical subcircuits of switch, 2 Bit, 3 Bit, 4 Bit,....., 9 Bit DAC, and then two 9 Bit DAC are used to build the 10-Bit potentiometric DAC.
 
 Have a look at the simplified architecture for potentiometric-DAC given below
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png">
+</p>
 
 Given below is the block diagram of the DAC - 
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png)
+<p align="center">
+  <src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png">
+</p>
+
 
 ## 3. EDA Tools Used 
 The design has been built using open-source EDA tools. The library used is osu180nm. 
