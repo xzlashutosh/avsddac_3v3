@@ -1,11 +1,25 @@
 ## 1. Introduction to Potentiometric Digital to Analog Converter
 This repository presents a 10-bit Potentiometric Digital to Analog Converter.
 
-The target is to design 10-bit potentiometric DAC with 3.3v analog voltage and 1 off-chip external reference using osu180nm technology node. Here are the specifications taken from [VSD Corporation Pvt. Ltd.](https://github.com/xzlashutosh/avsddac_3v3/blob/master/potentiometricDAC_IP.pdf)
+The target is to design 10-bit potentiometric DAC with 3.3v analog voltage and 1 off-chip external reference using osu180nm technology node. Here are the specifications from [VSD Corporation Pvt. Ltd.](https://github.com/xzlashutosh/avsddac_3v3/blob/master/potentiometricDAC_IP.pdf)
 
 A DAC is a building block required to convert digital data into analog.
 
 ## Table of Contents
+
+## Potentiometric DAC Architecture Design
+
+The basic idea is to divide the voltage in N different voltage value in the range of Vref+ and Vref-. The design used to achieve it is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltge to the output.
+
+The problem of largness of the circuit is reduced by building subcircuits of 2 Bit, 3 Bit, 4 Bit,....., 9 Bit DAC, and then a two 9 Bit DAC are used to build the 10-Bit potentiometric DAC.
+
+Have a look at the simplified architecture for potentiometric-DAC given below
+
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png)
+
+Given below is the block diagram of the DAC - 
+
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png)
 
 ## 2.EDA Tools Used 
 The design has been built using open-source EDA tools. The library used is osu180nm. 
@@ -13,47 +27,71 @@ The design has been built using open-source EDA tools. The library used is osu18
 I have used [eSim](https://esim.fossee.in/downloads) to build schematic, [ngSpice](http://ngspice.sourceforge.net/download.html) to run simulations and verify the circuit. [Magic](http://opencircuitdesign.com/magic/) has been used to lay-out the circuit.
 
 ## 3. Pre-layout and Simulations
-### A. 10-Bit-DAC
+The complete circuit of 10-Bit potentiometric DAC is built hierarchically using the follwing subcircuits.
 
-![Alt Text](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/subcircuits/10_bit_dac.png)
+### A. Switch
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/Switch%20-%20prelayout.JPG)
 
-#### The source details are [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/SourceDetails.txt).
+### B. 2-Bit DAC subcircuit
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/2-Bit_DAC.png)
+
+### C. 3-Bit DAC subcircuit
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/3-bit_DAC.png)
+
+### D. 4-Bit DAC subcircuit
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/4-bitDAC.png)
+
+### E. 5-Bit DAC subcircuit
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/5_bit_dac.png)
+
+### F. 6-Bit DAC subcircuit
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/6_bit_dac.png)
+
+### G. 7-Bit DAC subcircuit
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/7_bit_dac.png)
+
+### H. 8-Bit DAC subcircuit
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/8_bit_dac.png)
+
+### I. 9-Bit DAC subcircuit
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/9_bit_dac.png)
+
+### J. 10-Bit-DAC
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/10_bit_dac.png)
+
+#### The source details at Vref+ = 3.3V and Vref- = 0V are given [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/SourceDetails.txt).
 
 
-### B. Vout v/s Digital Code Graph
+### Vout v/s Digital Code Graph
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/OutputWaveform.JPG)
 
 
-### C. INL(LSB) v/s Digital Code
+### INL(LSB) v/s Digital Code Graph
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/INL(LSB).png)
 
-### D. DNL(LSB) v/s Digital Code
+### DNL(LSB) v/s Digital Code Graph
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/DNL(LSB).png)
 
+### For simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-pre-layout-simulation--) - 
 
-## 4. Post-layout and Simulations
-### A. 10-Bit-DAC
+## 4. Layout and Simulations
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/Layout.png)
+### A. Switch Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/Switch.JPG)
+ 
 
-#### The source details are [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/toPasteInEnd.txt).
+### B. Resistor Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/resistor.JPG)
 
+value = 253 Ω
 
-### B. Vout v/s Digital Code Graph
+### C. Capacitor Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/capacitor.JPG)
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png)
-
-
-### C. INL(LSB) v/s Digital Code Graph
-
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/INL(LSB)-postLayout.png)
-
-### D. DNL(LSB) v/s Digital Code Graph
-
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/DNL(LSB)-postLayout.png)
+value = 3.12nF
 
 #### Modification done in osu180nm to make use of capacitor as a device - 
  add 
@@ -62,10 +100,57 @@ I have used [eSim](https://esim.fossee.in/downloads) to build schematic, [ngSpic
 
 in the #devices section inside the osu180nm.tech node.
 
-| Parameter| Pre-layout (LSB)| Post-Layout (LSB)
-| :---:  | :-: | :-: |
-|DNL| -0.999893345 LSB to 2.03065020 LSB | -1.182952606 LSB to 2.380283181 LSB |
-|INL| -1.953038429 LSB to 0.527216491 LSB| -3.698306813 LSB to 0.181125461 LSB |
+
+### D. 2-Bit DAC Subcircuit Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/2%20-%20Bit%20DAC%20(2).JPG)
+
+
+### E. 3-Bit DAC Subcircuit Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/3%20-%20Bit%20Dac.JPG)
+
+### F. 4-Bit DAC Subcircuit Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/4%20-%20Bit%20DAC.JPG)
+ 
+
+### G. 5-Bit DAC Subcircuit Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/5%20bitdac.JPG)
+
+
+### H. 6-Bit DAC Subcircuit Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/6%20-%20BIT%20DAC.JPG)
+
+### I. 7-Bit DAC Subcircuit Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/7bitdac.JPG)
+
+
+### J. 8-Bit DAC Subcircuit Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/8bitdac.JPG)
+
+
+### K. 9-Bit DAC Subcircuit Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/9BitDac.JPG)
+
+
+### L. 10-Bit-DAC Layout
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/10bit%20Dac%20(2).JPG)
+size = 635.1 x 684.8 microns
+
+#### The source details are [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/toPasteInEnd.txt).
+
+
+### Vout v/s Digital Code Graph
+
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png)
+
+
+### INL(LSB) v/s Digital Code Graph
+
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/INL(LSB)-postLayout.png)
+
+### DNL(LSB) v/s Digital Code Graph
+
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/DNL(LSB)-postLayout.png)
+
 
 | Parameter| Description| Min | Type | Max | Unit | Condition |
 | :---:  | :-: | :-: | :-: | :---:  | :-: | :-: |
@@ -77,9 +162,12 @@ in the #devices section inside the osu180nm.tech node.
 |VREFL|Reference voltage low|0|||V|T=-40 to 85C|
 |RES|Resolution| |10||bit|T=27C|
 
+| Parameter| Pre-layout (LSB)| Post-Layout (LSB)
+| :---:  | :-: | :-: |
+|DNL| -0.999893345 LSB to 2.03065020 LSB | -1.182952606 LSB to 2.380283181 LSB |
+|INL| -1.953038429 LSB to 0.527216491 LSB| -3.698306813 LSB to 0.181125461 LSB |
 
-1) Integral nonlinearity (INL), also referred to as linearity error, is the maximum deviation of the output from the line between zero and full scale excluding the effects of zero code and full-scale errors. The INL is calculated for code 0-63. 
-2) The differential nonlinearity (DNL), sometimes referred to as differential error, is the difference between the measured and ideal 1LSB amplitude change of any two adjacent codes. The DNL is calculated for code 0-63. 
+
 
 
 ## 6. Instructions to get started with the design
@@ -114,14 +202,16 @@ For windows you will have to install Cygwin Terminal and then Magic can run on w
 8. You should get the output as shown above in the [figure](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png).
   
 ## 7. Author 
-- Ashutosh Sharma, B.Tech, Electronics and Communication Engineering, IIITD&M Kurnool, edm17b009@iiitk.ac.in
+- Ashutosh Sharma, B.Tech, Electronics and Communication Engineering, IIITD&M Kurnool, xzlashutosh@gmail.com
 
 ## 8. Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
 - Philipp Gühring, Software Architect, LibreSilicon Assocation, pg@futureware.at
 
-I would also like to thank research fellows for extending their help and guidance throughout the internship program. Many Thanks to 
+I would also like to thank research fellows for extending their help and guidance during the research internship program. Many Thanks to 
 
-- Ankur Sah 
+- Ankur Sah, M.tech Embedded Systems, NIT Jamshedpur, ankursah5@gmail.com
 
-- Nikhil Shinde
+- Nikhil Shinde, 
+
+- Shubham Negi, 
