@@ -1,0 +1,7 @@
+Circuit: * SPICE3 file created from 2BitDacNew.ext - technology: scmos
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Fatal Error: Run: Missing node(s).

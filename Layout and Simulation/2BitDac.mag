@@ -1,0 +1,80 @@
+magic
+tech scmos
+timestamp 1598642508
+<< metal1 >>
+rect 54 15 59 27
+rect 71 -2 76 7
+rect 53 -3 76 -2
+rect 53 -6 87 -3
+rect 53 -7 76 -6
+rect 53 -33 58 -7
+rect 70 -72 75 -41
+rect 82 -43 92 -39
+rect 201 -40 214 -37
+rect 211 -52 214 -40
+rect 211 -53 216 -52
+rect 211 -55 213 -53
+rect 81 -72 84 -70
+rect 53 -75 84 -72
+rect 53 -82 58 -75
+rect 330 -87 333 -85
+rect 70 -94 75 -90
+rect 213 -91 221 -87
+rect 331 -88 333 -87
+rect 70 -97 90 -94
+rect 70 -109 74 -97
+rect 53 -113 74 -109
+rect 53 -132 58 -113
+rect 210 -127 213 -118
+rect 78 -133 89 -129
+rect 198 -130 213 -127
+rect 70 -160 75 -140
+rect 70 -163 82 -160
+rect 70 -169 74 -163
+<< m3contact >>
+rect 78 -43 84 -38
+rect 213 -91 218 -87
+rect 78 -133 84 -129
+<< metal3 >>
+rect 78 -38 82 22
+rect 78 -129 82 -43
+rect 213 -87 217 -31
+use resistor  resistor_0
+timestamp 1598617915
+transform 1 0 62 0 1 9
+box -9 -7 15 11
+use resistor  resistor_1
+timestamp 1598617915
+transform 1 0 61 0 1 -39
+box -9 -7 15 11
+use switchNew  switchNew_0
+timestamp 1598622215
+transform 1 0 15 0 1 -79
+box 69 6 187 75
+use resistor  resistor_2
+timestamp 1598617915
+transform 1 0 61 0 1 -88
+box -9 -7 15 11
+use resistor  resistor_3
+timestamp 1598617915
+transform 1 0 61 0 1 -138
+box -9 -7 15 11
+use switchNew  switchNew_1
+timestamp 1598622215
+transform 1 0 12 0 1 -169
+box 69 6 187 75
+use switchNew  switchNew_2
+timestamp 1598622215
+transform 1 0 144 0 1 -127
+box 69 6 187 75
+<< labels >>
+rlabel metal1 74 -4 74 -4 1 alpha
+rlabel metal1 73 -73 73 -73 1 beta
+rlabel metal1 72 -111 72 -111 1 gamma
+rlabel metal1 73 -158 73 -158 1 delta
+rlabel metal1 333 -88 333 -85 7 V_out2
+rlabel metal1 54 27 59 27 4 R_in2
+rlabel metal1 70 -169 74 -169 1 R_out2
+rlabel metal3 213 -31 217 -31 1 D1!
+rlabel metal3 78 22 82 22 5 D0
+<< end >>

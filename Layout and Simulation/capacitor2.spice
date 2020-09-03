@@ -1,0 +1,6 @@
+* SPICE3 file created from capacitor2.ext - technology: scmos
+
+.option scale=0.1u
+
+C0 gnd a_n41_n3# 3283700.000000fF
+C1 a_n41_n3# w_n1073741817_n1073741817# 21.59fF

@@ -1,0 +1,71 @@
+magic
+tech scmos
+timestamp 1598671795
+<< metal1 >>
+rect -2 403 3 404
+rect 155 278 158 279
+rect 287 191 301 194
+rect 152 86 155 87
+rect 298 42 301 191
+rect 213 39 301 42
+rect 213 20 216 39
+rect -6 0 16 5
+rect 162 -17 163 -13
+rect 273 -14 299 -11
+rect 209 -53 213 -44
+rect 209 -56 293 -53
+rect 20 -72 21 -68
+rect 150 -120 151 -116
+rect 18 -163 21 -162
+rect 290 -205 293 -56
+rect 160 -211 165 -207
+rect 283 -208 293 -205
+rect 19 -265 22 -264
+rect 147 -312 148 -308
+rect 16 -355 19 -354
+rect 8 -395 12 -394
+<< m3contact >>
+rect 162 188 167 192
+rect 158 -211 165 -207
+<< metal3 >>
+rect 167 245 170 339
+rect 162 242 170 245
+rect 162 192 165 242
+rect 162 97 165 188
+rect 162 94 168 97
+rect 138 87 160 91
+rect 20 3 24 49
+rect 18 0 24 3
+rect 18 -7 22 0
+rect 138 -57 142 87
+rect 164 84 168 94
+rect 162 81 167 84
+rect 138 -60 157 -57
+rect 162 -207 165 81
+use 3BitDac  3BitDac_0
+timestamp 1598642741
+transform 1 0 5 0 1 187
+box -11 -182 290 216
+use switchNew  switchNew_0
+timestamp 1598622215
+transform 1 0 86 0 1 -53
+box 69 6 187 75
+use 3BitDac  3BitDac_1
+timestamp 1598642741
+transform 1 0 1 0 1 -212
+box -11 -182 290 216
+<< labels >>
+rlabel metal1 299 -14 299 -11 7 V_out4
+rlabel metal1 20 -72 20 -68 1 D0!
+rlabel metal1 18 -163 21 -163 1 D0!
+rlabel metal1 19 -265 22 -265 1 D0!
+rlabel metal1 16 -355 19 -355 1 D0!
+rlabel metal1 155 278 158 278 1 D1!
+rlabel metal1 152 86 155 86 1 D1!
+rlabel metal1 162 -17 162 -13 1 D3!
+rlabel metal1 150 -120 150 -116 1 D1!
+rlabel metal1 147 -312 147 -308 1 D1!
+rlabel metal1 -2 404 3 404 5 R_in4
+rlabel metal3 167 339 170 339 1 D2!
+rlabel metal1 8 -395 12 -395 1 R_out4
+<< end >>

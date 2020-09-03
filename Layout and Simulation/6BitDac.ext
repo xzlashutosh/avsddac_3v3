@@ -1,0 +1,196 @@
+timestamp 1598764253
+version 8.1
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 10
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use 5BitDac 5BitDac_0 1 0 -869 0 1 885
+use 5BitDac 5BitDac_1 1 0 -868 0 1 -730
+use switchNew switchNew_0 1 0 -459 0 1 -6
+node "D3!" 37 3184.6 -715 -1158 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 36 15751 5726 0 0 0 0
+node "m3_n714_117#" 4 147.548 -714 117 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 637 356 0 0 0 0 0 0
+node "m3_n849_57#" 2 70.192 -849 57 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 307 168 0 0 0 0 0 0
+node "m3_n709_210#" 7 229.784 -709 210 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 929 576 0 0 0 0 0 0
+node "D2!" 0 3.876 -692 1620 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 12 0 0 0 0 0 0
+node "D1!" 0 2.922 -702 1621 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 10 0 0 0 0 0 0
+node "D0!" 0 5.52 -837 1675 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0 0 0
+node "D4!" 27 1618.33 -546 -759 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 38 8435 3362 0 0 0 0 0 0
+node "R_out6" 0 12.798 -858 -1539 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 10 0 0 0 0 0 0 0 0 0 0
+node "m1_n715_n1158#" 0 43.95 -715 -1158 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 26 0 0 0 0 0 0 0 0 0 0
+node "m1_n546_n759#" 0 28.374 -546 -759 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "m1_n427_n756#" 16 3120.06 -427 -756 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3217 1598 0 0 0 0 0 0 0 0 0 0
+node "m1_n710_n352#" 0 51.738 -710 -352 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0 0 0 0 0
+node "V_out6" 0 17.109 -272 33 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 12 0 0 0 0 0 0 0 0 0 0
+node "D5!" 0 51.738 -393 30 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0 0 0 0 0
+node "m1_n860_70#" 0 41.307 -860 70 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35 24 0 0 0 0 0 0 0 0 0 0
+node "m1_n714_457#" 0 36.162 -714 457 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 22 0 0 0 0 0 0 0 0 0 0
+node "m1_n430_858#" 16 3314.89 -430 858 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3444 1688 0 0 0 0 0 0 0 0 0 0
+node "m1_n546_856#" 0 32.268 -546 856 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 0 0 0 0 0 0 0 0 0 0
+node "m1_n705_1263#" 0 28.374 -705 1263 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "R_in6" 0 15.441 -861 1685 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 12 0 0 0 0 0 0 0 0 0 0
+substrate "w_n1073741817_n1073741817#" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n546_n759#" "D4!" 11.38
+cap "m1_n715_n1158#" "D3!" 8.361
+cap "D1!" "D2!" 8.072
+cap "m3_n714_117#" "m3_n709_210#" 928.28
+cap "m1_n710_n352#" "D3!" 10.956
+cap "m1_n705_1263#" "D3!" 3.876
+cap "m1_n714_457#" "D3!" 9.786
+cap "m3_n714_117#" "D3!" 285.969
+cap "m1_n546_856#" "D4!" 15.816
+cap "m3_n709_210#" "D3!" 141.359
+subcap "D3!" -3161.91
+cap "D3!" "5BitDac_1/4BitDac_1/D2!" 32.288
+cap "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130#" "D3!" 8.346
+cap "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/D1!" "D3!" 100.734
+cap "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/Vdd!" "D3!" 3.633
+cap "5BitDac_1/4BitDac_1/D1!" "D3!" 5.55
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/Vdd!" 2.406
+cap "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/D1!" "D3!" 308.534
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/Vdd!" 10.38
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_130_17#" 5.73
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40#" 4.173
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/Vdd!" 8.421
+cap "D3!" "5BitDac_1/4BitDac_1/D1!" 3.204
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/Vdd!" 6.015
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130#" 17.688
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/w_124_44#" 5.73
+cap "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/D1!" "D3!" 73.432
+cap "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40#" "D3!" 10.899
+cap "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/D1!" "D3!" 184.4
+cap "D3!" "5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/Vdd!" 4.812
+subcap "D4!" -1602.2
+cap "D4!" "5BitDac_1/switchNew_0/Vdd!" 7.308
+cap "5BitDac_1/D4!" "D4!" 6.592
+subcap "m1_n427_n756#" -3013.25
+cap "5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130#" "D3!" 7.785
+cap "5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/D1!" "D3!" 220.768
+cap "5BitDac_1/m1_308_6#" "D4!" 10.026
+cap "5BitDac_1/switchNew_0/Vdd!" "D4!" 9.135
+cap "5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40#" "D3!" 6.873
+cap "5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/D1!" "D3!" 360.112
+cap "5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/D1!" "D3!" 99.456
+cap "5BitDac_1/4BitDac_0/D1!" "D3!" 3.114
+cap "5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130#" "D3!" 15.447
+cap "5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40#" "D3!" 17.274
+cap "5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/D1!" "D3!" 272.624
+cap "5BitDac_1/4BitDac_0/D1!" "D3!" 1.038
+cap "5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130#" "D3!" 17.688
+cap "5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/D1!" "D3!" 44.208
+cap "5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40#" "D3!" 8.346
+cap "5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/D1!" "D3!" 44.208
+cap "5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130#" "D3!" 8.346
+cap "5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/D1!" "D3!" 44.208
+subcap "m3_n849_57#" -47.792
+cap "5BitDac_1/D1!" "5BitDac_1/D2!" -1.13687e-13
+cap "5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/w_152_9#" "D3!" 8.346
+subcap "D5!" -20.345
+subcap "m3_n849_57#" -11.847
+cap "5BitDac_0/4BitDac_1/D0!" "5BitDac_1/D0!" 2.31
+cap "5BitDac_0/R_out5" "5BitDac_1/D0!" 7.848
+subcap "m3_n714_117#" -59.444
+cap "D3!" "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/D1!" -4.604
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/gnd!" "m3_n709_210#" 16.274
+cap "m3_n709_210#" "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/w_152_9#" 6.534
+cap "D3!" "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/w_152_9#" 2.865
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/D1!" "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/w_152_9#" 6.534
+cap "m3_n709_210#" "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24#" 5.22
+subcap "m3_n709_210#" -167.085
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24#" "5BitDac_0/4BitDac_1/D2!" 5.22
+cap "5BitDac_0/4BitDac_1/D1!" "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/D1!" 1.296
+cap "5BitDac_0/4BitDac_1/D1!" "D3!" 3.993
+cap "5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_130_17#" "5BitDac_0/4BitDac_1/D2!" 7.848
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40#" "5BitDac_0/4BitDac_1/D2!" 6.534
+cap "5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_130_17#" "D3!" 5.73
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/Vdd!" "5BitDac_0/4BitDac_1/D2!" 32.839
+cap "5BitDac_0/4BitDac_1/D2!" "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/D1!" 355.168
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40#" "D3!" 4.173
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/Vdd!" "D3!" 14.013
+cap "5BitDac_0/4BitDac_1/D2!" "D3!" -2.302
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/D1!" "D3!" 338.535
+cap "5BitDac_0/4BitDac_1/3BitDac_1/D2!" "5BitDac_0/4BitDac_1/D2!" 3.456
+cap "5BitDac_0/4BitDac_1/3BitDac_1/D2!" "D3!" 2.076
+cap "5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/Vdd!" "D3!" 14.013
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130#" "D3!" 20.304
+cap "5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/w_124_44#" "D3!" 8.346
+cap "5BitDac_0/4BitDac_1/D1!" "D3!" 6.588
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/D1!" "D3!" 62.376
+cap "5BitDac_0/4BitDac_1/D2!" "D3!" 3.396
+cap "5BitDac_0/4BitDac_1/switchNew_0/a_130_17#" "D3!" 8.346
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/Vdd!" "D3!" 14.013
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40#" "D3!" 13.515
+cap "5BitDac_0/D3!" "D3!" 2.076
+cap "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/D1!" "D3!" 248.29
+subcap "m1_n714_457#" -13.732
+cap "5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130#" "D3!" 23.232
+cap "5BitDac_0/4BitDac_1/switchNew_0/w_124_44#" "D3!" 9.654
+cap "5BitDac_0/4BitDac_1/switchNew_0/Vdd!" "D3!" 15.606
+cap "5BitDac_0/4BitDac_1/D1!" "D3!" 2.256
+cap "5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/Vdd!" "D3!" 12.42
+cap "5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/D1!" "D3!" 497.902
+cap "5BitDac_0/4BitDac_1/D1!" "D3!" 6.228
+cap "5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_130_17#" "D3!" 4.422
+cap "5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40#" "D3!" 9.738
+cap "5BitDac_0/4BitDac_1/D1!" "D3!" 4.941
+cap "5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130#" "D3!" 24.042
+cap "5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/w_124_44#" "D3!" 4.422
+cap "5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/D1!" "D3!" 83.141
+cap "5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40#" "D3!" 17.274
+cap "5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/D1!" "D3!" 598.7
+cap "5BitDac_0/D4!" "D4!" 6.592
+cap "5BitDac_0/m1_301_n425#" "D4!" 9.162
+subcap "m1_n430_858#" -3235.9
+cap "5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130#" "D3!" 12.27
+cap "5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/D1!" "D3!" 598.7
+subcap "m1_n546_856#" -14.914
+cap "5BitDac_0/switchNew_0/Vdd!" "D4!" 21.195
+cap "5BitDac_0/m1_308_6#" "D4!" 10.476
+subcap "m1_n430_858#" -3280.95
+cap "5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40#" "D3!" 19.89
+cap "5BitDac_0/4BitDac_0/D1!" "D3!" 4.152
+cap "5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/D1!" "D3!" 459.559
+cap "5BitDac_0/4BitDac_0/D1!" "D3!" 2.076
+cap "5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/D1!" "D3!" 40.059
+cap "5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130#" "D3!" 23.232
+subcap "m1_n705_1263#" -42.086
+cap "5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/w_152_9#" "D3!" 29.19
+cap "5BitDac_0/4BitDac_0/D1!" "D3!" 2.076
+cap "5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/D1!" "D3!" 111.442
+cap "5BitDac_0/D3!" "D3!" 2.076
+cap "5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130#" "D3!" 23.73
+cap "5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/D1!" "D3!" 250.496
+cap "5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/w_152_9#" "D3!" 29.148
+cap "5BitDac_0/4BitDac_0/D1!" "D3!" 2.166
+cap "5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/D1!" "D3!" 504.608
+cap "5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/w_152_9#" "D3!" 12.021
+cap "5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/w_152_9#" "D3!" 13.578
+cap "D1!" "D2!" 8.072
+cap "D1!" "D3!" 53.416
+merge "5BitDac_0/D0!" "D0!" -2.056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0
+merge "5BitDac_0/D1!" "D1!" -2.056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0
+merge "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/D0" "5BitDac_1/D0!" -13.916 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -30 0 0 0 0 0 0
+merge "5BitDac_1/D0!" "m3_n849_57#"
+merge "5BitDac_1/D3!" "m1_n715_n1158#" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "m1_n715_n1158#" "m1_n710_n352#"
+merge "5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/D1!" "5BitDac_1/D1!" -100.939 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -414 -251 0 0 0 0 0 0
+merge "5BitDac_1/D1!" "m3_n714_117#"
+merge "5BitDac_1/R_in5" "5BitDac_0/R_out5" -20.034 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 0 0 0 0 0 0 0 0 0 0
+merge "5BitDac_0/R_out5" "m1_n860_70#"
+merge "switchNew_0/a_130_17#" "5BitDac_1/V_out5" -23.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -18 0 0 0 0 0 0 0 0 0 0
+merge "5BitDac_1/V_out5" "m1_n427_n756#"
+merge "5BitDac_1/D4!" "m1_n546_n759#" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "5BitDac_1/R_out5" "R_out6" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "5BitDac_0/w_n1073741817_n1073741817#" "switchNew_0/gnd!" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_0/gnd!" "5BitDac_1/w_n1073741817_n1073741817#"
+merge "5BitDac_1/w_n1073741817_n1073741817#" "w_n1073741817_n1073741817#"
+merge "5BitDac_0/D2!" "D2!" -1.542 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0
+merge "5BitDac_0/D3!" "m1_n714_457#" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "m1_n714_457#" "m1_n705_1263#"
+merge "5BitDac_0/R_in5" "R_in6" -11.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_0/a_81_36#" "D5!" -0.564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 -8 0 0 0 0 0 0 0 0 0 0
+merge "5BitDac_0/4BitDac_1/D2!" "5BitDac_1/D2!" -186.987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -761 -467 0 0 0 0 0 0
+merge "5BitDac_1/D2!" "m3_n709_210#"
+merge "5BitDac_0/D4!" "m1_n546_856#" -15.858 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -12 0 0 0 0 0 0 0 0 0 0
+merge "5BitDac_0/V_out5" "switchNew_0/w_124_44#" -52.983 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -63 -24 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_0/w_124_44#" "m1_n430_858#"
+merge "switchNew_0/w_152_9#" "V_out6" -0.423 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 -6 0 0 0 0 0 0 0 0 0 0

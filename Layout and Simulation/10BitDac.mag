@@ -1,0 +1,43 @@
+magic
+tech scmos
+timestamp 1599097850
+<< metal1 >>
+rect 16 3280 21 3283
+rect 5225 -23 5229 1
+rect 5 -28 5229 -23
+rect 5 -146 10 -28
+rect 6146 -66 6149 1796
+rect 6150 -102 6156 -98
+rect 6266 -99 6302 -96
+rect 6139 -132 6148 -129
+rect 6139 -1630 6142 -132
+rect 6280 -135 6283 -99
+rect 6262 -139 6283 -135
+rect 6262 -162 6274 -139
+rect 6136 -1633 6142 -1630
+rect 5214 -3427 5218 -3426
+<< metal2 >>
+rect 4399 3330 4419 3332
+rect 4399 3328 4401 3330
+use 9BitDac  9BitDac_0
+timestamp 1598943762
+transform 1 0 0 0 1 7
+box 0 -7 6147 3369
+use 9BitDac  9BitDac_1
+timestamp 1598943762
+transform 1 0 -11 0 1 -3419
+box 0 -7 6147 3369
+use switchNew  switchNew_0
+timestamp 1598622215
+transform 1 0 6079 0 1 -138
+box 69 6 187 75
+use capacitor2  capacitor2_0
+timestamp 1599096684
+transform 0 1 6162 -1 0 -267
+box -105 -12 219 150
+<< labels >>
+rlabel metal1 5214 -3427 5218 -3427 1 gnd!
+rlabel metal1 16 3282 21 3282 1 R_in10
+rlabel metal1 6150 -102 6150 -98 1 D9!
+rlabel metal1 6302 -99 6302 -96 7 V_out10
+<< end >>
