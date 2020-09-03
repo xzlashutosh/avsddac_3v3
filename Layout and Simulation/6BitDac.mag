@@ -1,0 +1,75 @@
+magic
+tech scmos
+timestamp 1598764253
+<< metal1 >>
+rect -861 1685 -856 1686
+rect -705 1263 -700 1267
+rect -546 856 -540 860
+rect -430 858 -384 864
+rect -714 457 -707 461
+rect -860 70 -855 77
+rect -390 66 -386 858
+rect -393 30 -382 34
+rect -272 33 -269 36
+rect -710 -352 -699 -348
+rect -390 -751 -386 2
+rect -546 -759 -541 -755
+rect -427 -756 -386 -751
+rect -715 -1158 -706 -1154
+rect -858 -1539 -854 -1538
+<< m3contact >>
+rect -546 856 -540 860
+rect -546 -759 -541 -755
+<< metal3 >>
+rect -837 1675 -833 1679
+rect -702 1621 -698 1622
+rect -692 1620 -689 1623
+rect -546 860 -540 916
+rect -709 214 -705 268
+rect -709 210 -686 214
+rect -849 60 -845 124
+rect -714 120 -711 166
+rect -714 117 -697 120
+rect -849 57 -832 60
+rect -701 5 -697 117
+rect -691 3 -688 210
+rect -546 -755 -541 856
+<< m4contact >>
+rect -710 -352 -705 -348
+rect -715 -1158 -710 -1154
+<< metal4 >>
+rect -714 1267 -706 1677
+rect -714 1263 -700 1267
+rect -714 1256 -706 1263
+rect -714 435 -707 1256
+rect -714 241 -708 435
+rect -713 86 -710 241
+rect -713 83 -706 86
+rect -710 -348 -706 83
+rect -715 -1113 -712 -1112
+rect -709 -1113 -705 -352
+rect -715 -1117 -705 -1113
+rect -715 -1154 -712 -1117
+use 5BitDac  5BitDac_0
+timestamp 1598673948
+transform 1 0 -869 0 1 885
+box -8 -808 441 800
+use 5BitDac  5BitDac_1
+timestamp 1598673948
+transform 1 0 -868 0 1 -730
+box -8 -808 441 800
+use switchNew  switchNew_0
+timestamp 1598622215
+transform 1 0 -459 0 1 -6
+box 69 6 187 75
+<< labels >>
+rlabel metal4 -714 1677 -706 1677 1 D3!
+rlabel metal3 -702 1622 -698 1622 1 D1!
+rlabel metal3 -692 1623 -689 1623 1 D2!
+rlabel metal3 -837 1679 -833 1679 1 D0!
+rlabel metal1 -861 1686 -856 1686 5 R_in6
+rlabel metal3 -546 916 -540 916 1 D4!
+rlabel metal1 -393 30 -393 34 1 D5!
+rlabel metal1 -269 33 -269 36 7 V_out6
+rlabel metal1 -858 -1539 -854 -1539 1 R_out6
+<< end >>

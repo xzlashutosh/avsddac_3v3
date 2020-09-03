@@ -1,0 +1,21 @@
+magic
+tech scmos
+timestamp 1599096684
+<< polysilicon >>
+rect -41 117 138 122
+rect -41 92 -36 117
+rect -18 92 138 117
+rect -41 87 138 92
+rect 105 77 138 87
+rect -41 42 138 77
+rect -41 32 -8 42
+rect -41 -3 102 32
+<< polycontact >>
+rect -36 92 -18 117
+<< metal1 >>
+rect -105 100 -36 112
+<< glass >>
+rect -58 -12 219 150
+<< labels >>
+rlabel glass 170 124 170 124 1 gnd!
+<< end >>

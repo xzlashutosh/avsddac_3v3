@@ -1,0 +1,46 @@
+magic
+tech scmos
+timestamp 1598943762
+<< metal1 >>
+rect 3022 3366 6005 3369
+rect 16 3269 21 3273
+rect 3022 1612 3025 3366
+rect 3020 1609 3025 1612
+rect 3057 3258 3084 3263
+rect 3057 31 3061 3258
+rect 6002 1822 6005 3366
+rect 6002 1819 6025 1822
+rect 6027 1783 6033 1787
+rect 6143 1786 6147 1789
+rect 6023 1740 6026 1756
+rect 6023 1737 6083 1740
+rect 6080 1603 6083 1737
+rect 3056 25 3061 31
+rect 3056 1 3060 25
+rect 2166 0 3060 1
+rect 2162 -3 3060 0
+rect 5225 -7 5229 -6
+<< m2contact >>
+rect 6022 1783 6027 1787
+<< metal2 >>
+rect 4400 3323 4418 3326
+rect 4400 3321 4420 3323
+rect 6022 1787 6025 3214
+use 8BitDac  8BitDac_0
+timestamp 1598816343
+transform 1 0 0 0 1 20
+box 0 -20 3020 3332
+use switchNew  switchNew_0
+timestamp 1598622215
+transform 1 0 5956 0 1 1747
+box 69 6 187 75
+use 8BitDac  8BitDac_1
+timestamp 1598816343
+transform 1 0 3063 0 1 14
+box 0 -20 3020 3332
+<< labels >>
+rlabel metal1 6147 1786 6147 1789 7 V_out9
+rlabel metal1 16 3273 21 3273 1 R_in9
+rlabel metal2 6022 3214 6025 3214 1 D8!
+rlabel metal1 5225 -7 5229 -7 1 R_out9
+<< end >>

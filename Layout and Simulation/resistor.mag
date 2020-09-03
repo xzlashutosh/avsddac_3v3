@@ -1,0 +1,27 @@
+magic
+tech scmos
+timestamp 1598617915
+<< polycontact >>
+rect -8 6 -3 10
+rect 9 -6 14 -2
+<< pseudo_rpoly >>
+rect -9 10 15 11
+rect -9 6 -8 10
+rect -3 8 15 10
+rect -9 3 12 6
+rect -9 -4 -8 3
+rect 14 1 15 8
+rect -6 -2 15 1
+rect -9 -6 9 -4
+rect 14 -6 15 -2
+rect -9 -7 15 -6
+<< rpoly >>
+rect -3 6 14 8
+rect 12 3 14 6
+rect -8 1 14 3
+rect -8 -2 -6 1
+rect -8 -4 9 -2
+<< labels >>
+rlabel polycontact 12 -4 12 -4 8 b
+rlabel polycontact -6 8 -6 8 4 a
+<< end >>

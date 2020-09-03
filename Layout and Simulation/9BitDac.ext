@@ -1,0 +1,69 @@
+timestamp 1598943762
+version 8.1
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 10
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use 8BitDac 8BitDac_0 1 0 0 0 1 20
+use switchNew switchNew_0 1 0 5956 0 1 1747
+use 8BitDac 8BitDac_1 1 0 3063 0 1 14
+node "m2_4400_3321#" 0 34.53 4400 3321 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 94 50 0 0 0 0 0 0 0 0
+node "R_out9" 0 12.798 5225 -7 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 10 0 0 0 0 0 0 0 0 0 0
+node "m1_6023_1737#" 6 736.848 6023 1737 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 630 426 0 0 0 0 0 0 0 0 0 0
+node "V_out9" 0 20.586 6143 1786 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0 0 0 0 0 0 0
+node "D8!" 38 1868.75 6022 1783 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 4301 2872 0 0 0 0 0 0 0 0
+node "m1_2162_n3#" 84 16310.2 2162 -3 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16757 8376 0 0 0 0 0 0 0 0 0 0
+node "R_in9" 0 28.374 16 3269 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "m1_3020_1609#" 168 21943.1 3020 1609 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18927 12624 0 0 0 0 0 0 0 0 0 0
+substrate "w_n1073741817_n1073741817#" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "D8!" "m1_3020_1609#" 15.093
+subcap "m1_2162_n3#" -16122.7
+cap "m1_2162_n3#" "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/resistor_3/a" 206.19
+cap "m1_2162_n3#" "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma" 30.9285
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/resistor_1/a" "m1_2162_n3#" 216.5
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/resistor_2/a" "m1_2162_n3#" 103.095
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/resistor_3/a" "m1_2162_n3#" 158.079
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/R_in2" "m1_2162_n3#" 115.466
+cap "m1_2162_n3#" "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/alpha" 103.095
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/resistor_1/a" "m1_2162_n3#" 199.317
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/resistor_2/a" "m1_2162_n3#" 68.73
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/R_in3" "m1_2162_n3#" 111.932
+cap "m1_2162_n3#" "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/alpha" 13.746
+subcap "m1_3020_1609#" -21609.4
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/resistor_3/a" "m1_2162_n3#" 68.73
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/resistor_1/a" "m1_2162_n3#" 82.476
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/resistor_2/a" "m1_2162_n3#" 137.46
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/resistor_3/a" "m1_2162_n3#" 247.428
+subcap "m1_6023_1737#" -53.55
+subcap "D8!" -1638.47
+cap "switchNew_0/a_86_24#" "switchNew_0/a_105_20#" 5.68434e-14
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/resistor_3/a" "m1_2162_n3#" 107.219
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/R_in2" "m1_2162_n3#" 144.333
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/resistor_1/a" "m1_2162_n3#" 343.65
+cap "switchNew_0/w_124_44#" "switchNew_0/a_81_36#" 3.648
+subcap "V_out9" -25.56
+cap "m1_2162_n3#" "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/gamma" 82.476
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/resistor_1/a" "m1_2162_n3#" 115.466
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/resistor_2/a" "m1_2162_n3#" 82.476
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/resistor_3/a" "m1_2162_n3#" 35.3469
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/R_in3" "m1_2162_n3#" 130.587
+cap "m1_2162_n3#" "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/alpha" 140.209
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/resistor_2/a" "m1_2162_n3#" 58.9114
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/resistor_3/a" "m1_2162_n3#" 100.149
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/resistor_1/a" "m1_2162_n3#" 41.238
+cap "8BitDac_1/7BitDac_0/6BitDac_0/5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/resistor_1/a" "m1_2162_n3#" 141.387
+subcap "m2_4400_3321#" -32.44
+merge "switchNew_0/w_124_44#" "8BitDac_0/V_out8" -3142.66 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2700 -1812 0 0 0 0 0 0 0 0 0 0
+merge "8BitDac_0/V_out8" "m1_3020_1609#"
+merge "switchNew_0/a_130_17#" "8BitDac_1/V_out8" -27.264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -20 0 0 0 0 0 0 0 0 0 0
+merge "8BitDac_1/V_out8" "m1_6023_1737#"
+merge "8BitDac_1/D6!" "m2_4400_3321#" 23.603 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59 36 0 0 0 0 0 0 0 0
+merge "8BitDac_1/R_out8" "R_out9" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_0/a_81_36#" "D8!" -10.158 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_0/gnd!" "8BitDac_1/w_n1073741817_n1073741817#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "8BitDac_1/w_n1073741817_n1073741817#" "8BitDac_0/w_n1073741817_n1073741817#"
+merge "8BitDac_0/w_n1073741817_n1073741817#" "w_n1073741817_n1073741817#"
+merge "8BitDac_1/R_in8" "8BitDac_0/R_out8" -6870.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7039 -3536 0 0 0 0 0 0 0 0 0 0
+merge "8BitDac_0/R_out8" "m1_2162_n3#"
+merge "8BitDac_0/R_in8" "R_in9" -11.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_0/w_152_9#" "V_out9" -6.678 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0 0 0

@@ -1,27 +1,12 @@
+## 1. Introduction to Potentiometric Digital to Analog Converter
+This repository presents a 10-bit Potentiometric Digital to Analog Converter. The target is to design 10-bit potentiometric DAC with 3.3v analog voltage and 1 off-chip external reference using osu180nm technology node. Here are the specifications taken from [VSD Corporation Pvt. Ltd.](https://www.vlsisystemdesign.com/ip/)
+The DAC is a building block required to convert digital data into analog.
+
 ## Table of Contents
-- [1. Introduction to Potentiometric-Digital to Analog Converter](#1-introduction-to-potentiometric-digital-to-analog-converter)
-- [2. Open-Source EDA tools used](#2-open-source-eda-tools-used)
-- [3. Pre-layout Simulations](#3-pre-layout-simulations)
-  * [10-Bit-DAC](#10-bit-dac)
-    + [The source details are -](#the-source-details-are--)
-  * [10-bit DAC Vout v/s digital code graph for 10-bit DAC](#10-bit-dac-vout-v-s-digital-code-graph-for-10-bit-dac)
-- [4. INL and DNL Value Calculation](#4-inl-and-dnl-value-calculation)
-  * [INL(LSB) v/s Digital Code](#inl-lsb--v-s-digital-code)
-  * [DNL(LSB) v/s Digital Code](#dnl-lsb--v-s-digital-code)
-- [5. Instructions to get started with the design](#5-instructions-to-get-started-with-the-design)
-- [6. Author](#6-author)
-- [7. Acknowledgments](#7-acknowledgments)
-- [8. Contact Information](#8-contact-information)
 
-## 1. Introduction to Potentiometric-Digital to Analog Converter
-This repository presents a 10-bit potentiometric digital to analog converter. It is aimed to achieve the specifications as given by [VSD Corporation Pvt. Ltd.](https://www.vlsisystemdesign.com/ip/) These building blocks are required to convert digital data into analog data. 
-The target is to design 10-bit potentiometric DAC with 3.3v analog voltage and 1 off-chip external reference using osu180nm tech node. To know more about the DACs, go to [this](https://github.com/xzlashutosh/potentiometric-DAC/blob/master/10-Bit%20Potentiometric%20Digital%20to%20Analog%20Converter%20with%20Off-Chip%20External%20Voltage%20Reference_Ashutosh_Sharma-.pdf) file.
-
-## 2. Open-Source EDA tools used 
-The design has been built using open-source EDA tools. For prelayout simulaions, eSim is used. The library used is osu180nm library.
-Here I have used esim on windows operating system, which contains all the tools like eeschema, ngspice, and kicad. Also the subcircuit function available in eSim have been used extensively in this project.
-
-To install eSim, go to https://esim.fossee.in/downloads and download eSim for windows to run and view this project.
+## 2.EDA Tools Used 
+The design has been built using open-source EDA tools. The library used is osu180nm. 
+I have used [eSim](https://esim.fossee.in/downloads) to build schematic, ngSpice and LtSpice to run simulations and verify the circuit. [Magic]() has been used to lay-out the circuit.
 
 ## 3. Pre-layout Simulations
 ### 10-Bit-DAC
@@ -65,30 +50,42 @@ v11 - PULSE(0 1.8 51.2m 60p 60p 51.2m 102.4m)
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/perfectLayouts/2BitDac/DNL(LSB).png)
 
 
+## 5. Post-layout Simulations
+
+
+
 | Parameter| Pre-layout (LSB)| 
 | :---:  | :-: |
 |DNL| -0.999893345 LSB to 2.03065020 LSB|
 |INL| 0.527216491 LSB to -1.953038429 LSB|
 
-
-## 5. Instructions to get started with the design
+## 6. Instructions to get started with the design
+For Pre-Layout Simulation - 
  1. Download eSim from the given [website](https://esim.fossee.in/downloads).
  2. Download this repository.
  3. Keep the contents of [subcircuits folder](https://github.com/xzlashutosh/potentiometric-DAC/tree/master/subcircuits) inside the eSim subcircuits folder (C:\FOSSEE\eSim\library\SubcircuitLibrary).
  4. Store the [libary files](https://github.com/xzlashutosh/potentiometric-DAC/tree/master/Libraries/User%20Libraries) in the eSim User Library section (C:\FOSSEE\eSim\library\deviceModelLibrary\User Libraries).
  5. Download and open the 10_bit_dac project in eSim kept in Ciruits and Simulations [folder](https://github.com/xzlashutosh/potentiometric-DAC/tree/master/Circuits%20and%20Simulations/10_bit_dac).
  6. Run the schematic, convert to ngspice and simulate the design to view the output. You should get the output as shown above in the figure.
- 
- Note: The simulation may take more than an hour to complete. Kindly keep patience.
- 
-## 6. Author 
-Ashutosh Sharma
+    The simulation may take more than an hour to complete. Kindly keep patience.
 
-## 7. Acknowledgments
-- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
-- Philipp Gühring, Software Architect, LibreSilicon Assocation
-
-## 8. Contact Information
+ For Post-Layout Simulation - 
+ 1. Download Magic from the given [website]() for Linux and Mac. For windows you will have to install Cygwin Terminal and then Magic can run on windows platform. 
+ 2. Download this repository.
+ 3. Store the [libary files](https://github.com/xzlashutosh/potentiometric-DAC/tree/master/Libraries/User%20Libraries) in the same folder.
+ 4. Go to the specific directory to run the Magic file.
+ 5. To open the 10BitDac.mag with osu180nm.tech using terminal type - 
+        magic -T osu180nm.tech 10BitDac
+ 6. To extract the spice netlist type in TkCon window -
+        extract all
+        ext2spice 10BitDac.ext
+ 7. To simulate the layout run ngspice in another terminal using -
+        ngspice 10BitDac.spice
+  
+## 7. Author 
 - Ashutosh Sharma, B.Tech, Electronics and Communication Engineering, IIITD&M Kurnool, edm17b009@iiitk.ac.in
+
+## 8. Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
 - Philipp Gühring, Software Architect, LibreSilicon Assocation, pg@futureware.at
+I would also like to thank my other research fellows for extending their help and guidance. Many Thanks to Nikhil Shinde and Sheryl Serrao.
