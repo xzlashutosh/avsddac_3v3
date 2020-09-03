@@ -55,8 +55,12 @@ I have used [eSim](https://esim.fossee.in/downloads) to build schematic, [ngSpic
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/DNL(LSB)-postLayout.png)
 
+#### Modification done in osu180nm to make use of capacitor as a device - 
+ add 
+ 
+ device capacitor None glass poly,pc 9000 73000 
 
-
+in the #devices section inside the osu180nm.tech node.
 
 | Parameter| Pre-layout (LSB)| Post-Layout (LSB)
 | :---:  | :-: | :-: |
@@ -76,19 +80,23 @@ The simulation may take more than an hour to complete. Kindly keep patience.
 
 ### For Post-Layout Simulation - 
 1. Download Magic from the given [website](http://opencircuitdesign.com/magic/) for Linux and Mac.
- 
 For windows you will have to install Cygwin Terminal and then Magic can run on windows platform also. Kindly look [here](http://opencircuitdesign.com/cygwin/magic.html) for windows operating system. 
- 
+
 2. Download [this](https://github.com/xzlashutosh/avsddac_3v3/tree/master/Layout%20and%20Simulation) folder or complete repository.
 3. Go to the specific directory to run the Magic file.
 4. To open the 10BitDac.mag with osu180nm.tech using terminal type - 
        magic -T osu180nm.tech 10BitDac
 5. To extract the spice netlist type in tkcon window -
+
        extract all
        ext2spice 10BitDac.ext
-6. To simulate the layout, run ngspice in another terminal using -
+     
+6. After you get the extracted netlist add the contents of [this](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/toPasteInStarting.txt) file in the beginning of the spice file, and also add the contents of [this](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/toPasteInEnd.txt) file in the end of the spice file to append the pmos,nmos libraries and simulation parameters.
+7. Now, to simulate the layout, run ngspice in another terminal using -
+
        ngspice 10BitDac.spice
-7. You should get the output as shown above in the [figure](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png).
+       
+8. You should get the output as shown above in the [figure](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png).
   
 ## 7. Author 
 - Ashutosh Sharma, B.Tech, Electronics and Communication Engineering, IIITD&M Kurnool, edm17b009@iiitk.ac.in
