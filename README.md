@@ -7,11 +7,12 @@ A DAC is a building block required to convert digital data into analog.
 
 ## Table of Contents
 
-## Potentiometric DAC Architecture Design
+
+## 2. Potentiometric DAC Architecture Design
 
 The basic idea is to divide the voltage in N different voltage value in the range of Vref+ and Vref-. The design used to achieve it is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltge to the output.
 
-The problem of largness of the circuit is reduced by building subcircuits of 2 Bit, 3 Bit, 4 Bit,....., 9 Bit DAC, and then a two 9 Bit DAC are used to build the 10-Bit potentiometric DAC.
+The problem of largness of the circuit is reduced by building hierarchical subcircuits of switch, 2 Bit, 3 Bit, 4 Bit,....., 9 Bit DAC, and then two 9 Bit DAC are used to build the 10-Bit potentiometric DAC.
 
 Have a look at the simplified architecture for potentiometric-DAC given below
 
@@ -21,12 +22,12 @@ Given below is the block diagram of the DAC -
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png)
 
-## 2.EDA Tools Used 
+## 3. EDA Tools Used 
 The design has been built using open-source EDA tools. The library used is osu180nm. 
 
 I have used [eSim](https://esim.fossee.in/downloads) to build schematic, [ngSpice](http://ngspice.sourceforge.net/download.html) to run simulations and verify the circuit. [Magic](http://opencircuitdesign.com/magic/) has been used to lay-out the circuit.
 
-## 3. Pre-layout and Simulations
+## 4. Pre-layout and Simulations
 The complete circuit of 10-Bit potentiometric DAC is built hierarchically using the follwing subcircuits.
 
 ### A. Switch
@@ -62,22 +63,22 @@ The complete circuit of 10-Bit potentiometric DAC is built hierarchically using 
 #### The source details at Vref+ = 3.3V and Vref- = 0V are given [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/SourceDetails.txt).
 
 
-### Vout v/s Digital Code Graph
+### Vout v/s Digital Code Graph for 10-Bit DAC
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/OutputWaveform.JPG)
 
 
-### INL(LSB) v/s Digital Code Graph
+### INL(LSB) v/s Digital Code Graph for 10-Bit DAC
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/INL(LSB).png)
 
-### DNL(LSB) v/s Digital Code Graph
+### DNL(LSB) v/s Digital Code Graph for 10-Bit DAC
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/DNL(LSB).png)
 
-### For simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-pre-layout-simulation--) - 
+### For pre-layout simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-pre-layout-simulation--).
 
-## 4. Layout and Simulations
+## 5. Layout and Simulations 
 
 ### A. Switch Layout
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/Switch.JPG)
@@ -138,19 +139,22 @@ size = 635.1 x 684.8 microns
 #### The source details are [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/toPasteInEnd.txt).
 
 
-### Vout v/s Digital Code Graph
+### Vout v/s Digital Code Graph for 10-Bit DAC
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png)
 
 
-### INL(LSB) v/s Digital Code Graph
+### INL(LSB) v/s Digital Code Graph for 10-Bit DAC
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/INL(LSB)-postLayout.png)
 
-### DNL(LSB) v/s Digital Code Graph
+### DNL(LSB) v/s Digital Code Graph for 10-Bit DAC
 
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/DNL(LSB)-postLayout.png)
 
+### For post-layout simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-post-layout-simulation--).
+
+## 6. Specification List
 
 | Parameter| Description| Min | Type | Max | Unit | Condition |
 | :---:  | :-: | :-: | :-: | :---:  | :-: | :-: |
@@ -170,7 +174,7 @@ size = 635.1 x 684.8 microns
 
 
 
-## 6. Instructions to get started with the design
+## 7. Instructions to get started with the design
 ### For Pre-Layout Simulation - 
 1. Download eSim from the given [website](https://esim.fossee.in/downloads).
 2. Download [this](https://github.com/xzlashutosh/avsddac_3v3/tree/master/Pre-Layout%20and%20Simulation) folder.
@@ -201,10 +205,10 @@ For windows you will have to install Cygwin Terminal and then Magic can run on w
        
 8. You should get the output as shown above in the [figure](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png).
   
-## 7. Author 
+## 8. Author 
 - Ashutosh Sharma, B.Tech, Electronics and Communication Engineering, IIITD&M Kurnool, xzlashutosh@gmail.com
 
-## 8. Acknowledgments
+## 9. Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
 - Philipp Gühring, Software Architect, LibreSilicon Assocation, pg@futureware.at
 
@@ -212,6 +216,6 @@ I would also like to thank research fellows for extending their help and guidanc
 
 - Ankur Sah, M.tech Embedded Systems, NIT Jamshedpur, ankursah5@gmail.com
 
-- Nikhil Shinde, 
+- Nikhil Shinde, B.E., KJSIEIT Mumbai, shinde.nv@somaiya.edu
 
-- Shubham Negi, 
+- Shubham Negi, , B.Tech. Computer Engineering, IIITD&M Kurnool, coe17b030@iiitk.ac.in
