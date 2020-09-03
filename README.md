@@ -17,14 +17,17 @@ The problem of largness of the circuit is reduced by building hierarchical subci
 Have a look at the simplified architecture for potentiometric-DAC given below
 
 <p align="center">
-   src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png">
+  <img width="7000" height="600" src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/An%20overview%20of%2010-Bit%20PotDAC.png">
 </p>
+
+
 
 Given below is the block diagram of the DAC - 
 
 <p align="center">
-  src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png">
+  <img width="7000" height="600" src="https://github.com/xzlashutosh/avsddac_3v3/blob/master/subcircuits/overview%20of%20design.png">
 </p>
+
 
 
 ## 3. EDA Tools Used 
@@ -139,6 +142,7 @@ in the #devices section inside the osu180nm.tech node.
 
 ### L. 10-Bit-DAC Layout
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/10bit%20Dac%20(2).JPG)
+
 size = 635.1 x 684.8 microns
 
 #### The source details are [here](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/toPasteInEnd.txt).
@@ -224,3 +228,5 @@ I would also like to thank research fellows for extending their help and guidanc
 - Nikhil Shinde, B.E., KJSIEIT Mumbai, shinde.nv@somaiya.edu
 
 - Shubham Negi, , B.Tech. Computer Engineering, IIITD&M Kurnool, coe17b030@iiitk.ac.in
+
+- Sheryl Serrao, Undergraduate Student, Mumbai University, sherylcorina@gmail.com
