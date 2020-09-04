@@ -77,6 +77,7 @@ Given below is the block diagram of the DAC -
 |VREFH|Reference voltage high|||3.3|V|T=-40 to 85C|
 |VREFL|Reference voltage low|0|||V|T=-40 to 85C|
 |RES|Resolution| |10||bit|T=27C|
+|VFS|Full Scale Voltage|0| |3.291627| V |T=27C|
 
 | Parameter| Pre-layout (LSB)| Post-Layout (LSB)
 | :---:  | :-: | :-: |
