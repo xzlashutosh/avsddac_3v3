@@ -126,7 +126,7 @@ The complete circuit of 10-Bit potentiometric DAC is built hierarchically using 
 
 ### Vout v/s Digital Code Graph for 10-Bit DAC
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/OutputWaveform.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Pre-Layout%20and%20Simulation/prelayout%20-%20output%20waveform.png)
 
 
 ### INL(LSB) v/s Digital Code Graph for 10-Bit DAC
