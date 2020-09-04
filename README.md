@@ -253,7 +253,7 @@ For windows, you will have to install Cygwin Terminal and then Magic can run on 
 - Ashutosh Sharma, B.Tech, Electronics & Communication Engineering, IIITD&M Kurnool
 
 ## 9. Acknowledgments
-- Kunal Ghosh, Director VSD Corp. Pvt. Ltd.
+- Kunal Ghosh, Co-founder VSD Corp. Pvt. Ltd.
 - Philipp Gühring, Software Architect, LibreSilicon Association.
 
 I would also like to thank research fellows for extending their help and guidance during the research internship program. Many Thanks to 
@@ -265,7 +265,7 @@ I would also like to thank research fellows for extending their help and guidanc
 
 ## 10. Contact Information - 
  - Ashutosh Sharma, B.Tech, Electronics, and Communication Engineering, IIITD&M Kurnool, xzlashutosh@gmail.com
- - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. - kunalghosh@gmail.com
+ - Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalghosh@gmail.com
  - Philipp Gühring, Software Architect, LibreSilicon Association - pg@futureware.at
 
 
