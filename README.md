@@ -207,16 +207,16 @@ size = 635.1 x 684.8 microns
 
 ### Vout v/s Digital Code Graph for 10-Bit DAC
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3#vout-vs-digital-code-graph-for-10-bit-dac-1)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png)
 
 
 ### INL(LSB) v/s Digital Code Graph for 10-Bit DAC
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3#inllsb-vs-digital-code-graph-for-10-bit-dac-1)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/INL(LSB)-postLayout.png)
 
 ### DNL(LSB) v/s Digital Code Graph for 10-Bit DAC
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3#dnllsb-vs-digital-code-graph-for-10-bit-dac-1)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/DNL(LSB)-postLayout.png)
 
 ### For post-layout simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-post-layout-simulation--).
 
