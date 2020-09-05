@@ -24,7 +24,6 @@ A DAC is a building block required to convert digital data into analog.
   * [Vout v/s Digital Code Graph for 10-Bit DAC](#vout-v-s-digital-code-graph-for-10-bit-dac)
   * [INL(LSB) v/s Digital Code Graph for 10-Bit DAC](#inl-lsb--v-s-digital-code-graph-for-10-bit-dac)
   * [DNL(LSB) v/s Digital Code Graph for 10-Bit DAC](#dnl-lsb--v-s-digital-code-graph-for-10-bit-dac)
-  * [For pre-layout simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-pre-layout-simulation--).](#for-pre-layout-simulation-please-follow--this--https---githubcom-xzlashutosh-avsddac-3v3-for-pre-layout-simulation---)
 - [6. Layout and Simulations](#6-layout-and-simulations)
   * [A. Switch Layout](#a-switch-layout)
   * [B. Resistor Layout](#b-resistor-layout)
