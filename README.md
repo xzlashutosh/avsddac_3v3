@@ -163,6 +163,8 @@ value = 3.12nF
 
 in the #devices section inside the osu180nm.tech node.
 
+#### Limitation of osu180 PDK - 
+As the capacitor layer, or poly2 none are present in osu180nm, the capacitor can not be built in a straight forward way.The above given modifications in the technology node were done to simulate the characteristics of the circuit. Here, defining the capacitor in a certain manner gives the required characteristics in the circuit.
 
 ### D. 2-Bit DAC Subcircuit Layout
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/2.JPG)
