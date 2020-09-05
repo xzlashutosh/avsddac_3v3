@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1598673948
+timestamp 1599268620
 << metal1 >>
 rect 8 799 13 800
 rect 169 378 172 382
@@ -28,26 +28,38 @@ rect 159 -72 163 83
 rect 172 -12 175 189
 rect 171 -15 175 -12
 rect 169 -72 174 -15
+<< metal5 >>
+rect 133 775 141 795
+rect 79 84 83 90
+rect 79 -10 85 84
+rect 209 14 355 19
+rect 79 -16 133 -10
+rect 125 -31 133 -16
+rect 209 -60 214 14
+rect 185 -64 214 -60
+rect 193 -65 214 -64
+<< metal6 >>
+rect 33 -119 43 9
+rect 343 -68 350 -61
+rect 344 -166 350 -68
+rect 180 -172 350 -166
 use 4BitDac  4BitDac_0
-timestamp 1598671795
+timestamp 1599268620
 transform 1 0 10 0 1 395
 box -10 -395 301 404
 use 4BitDac  4BitDac_1
-timestamp 1598671795
+timestamp 1599268620
 transform 1 0 2 0 1 -411
 box -10 -395 301 404
 use switchNew  switchNew_0
-timestamp 1598622215
+timestamp 1599222484
 transform 1 0 252 0 1 -65
-box 69 6 187 75
+box 69 -1 187 81
 << labels >>
-rlabel metal1 162 -428 162 -424 1 D3!
-rlabel metal1 169 378 169 382 1 D3!
-rlabel metal1 327 -29 327 -25 1 D4!
 rlabel metal1 441 -26 441 -23 7 V_out5
-rlabel metal3 32 790 36 790 1 D0!
 rlabel metal3 167 736 171 736 1 D1!
 rlabel metal3 177 735 180 735 1 D2!
 rlabel metal1 8 800 13 800 5 R_in5
+rlabel metal3 32 790 36 790 1 D0!
 rlabel metal1 10 -808 14 -808 1 R_out5
 << end >>

@@ -7,139 +7,137 @@
 
 .option scale=0.1u
 
-M1000 2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1000 2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=980 ps=476
-M1001 2BitDac_1/switchNew_2/a_105_20# 2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1001 2BitDac_1/switchNew_2/a_105_21# 2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1002 2BitDac_1/V_out2 2BitDac_1/switchNew_2/a_86_24# 2BitDac_1/m1_201_n40# 2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1003 2BitDac_1/m1_201_n40# 2BitDac_1/switchNew_2/a_105_20# 2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1003 2BitDac_1/m1_201_n40# 2BitDac_1/switchNew_2/a_105_21# 2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1004 2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=525 ps=360
-M1005 2BitDac_1/switchNew_2/a_105_20# 2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1005 2BitDac_1/switchNew_2/a_105_21# 2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1006 2BitDac_1/V_out2 2BitDac_1/switchNew_2/a_86_24# 2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1007 2BitDac_1/V_out2 2BitDac_1/switchNew_2/a_105_20# 2BitDac_1/m1_198_n130# 2BitDac_1/V_out2 pfet w=10 l=2
+M1007 2BitDac_1/V_out2 2BitDac_1/switchNew_2/a_105_21# 2BitDac_1/m1_198_n130# 2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1008 2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1008 2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1009 2BitDac_1/switchNew_1/a_105_20# 2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1009 2BitDac_1/switchNew_1/a_105_21# 2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1010 2BitDac_1/m1_198_n130# 2BitDac_1/switchNew_1/a_86_24# 2BitDac_1/gamma 2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1011 2BitDac_1/gamma 2BitDac_1/switchNew_1/a_105_20# 2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1011 2BitDac_1/gamma 2BitDac_1/switchNew_1/a_105_21# 2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1012 2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1013 2BitDac_1/switchNew_1/a_105_20# 2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1013 2BitDac_1/switchNew_1/a_105_21# 2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1014 2BitDac_1/m1_198_n130# 2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1015 2BitDac_1/m1_198_n130# 2BitDac_1/switchNew_1/a_105_20# gnd 2BitDac_1/m1_198_n130# pfet w=10 l=2
+M1015 2BitDac_1/m1_198_n130# 2BitDac_1/switchNew_1/a_105_21# gnd 2BitDac_1/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=406 ps=370
 R0 2BitDac_1/gamma gnd polyResistor w=2 l=62
-R1 2BitDac_1/beta 2BitDac_1/gamma polyResistor w=2 l=62
-M1016 2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1016 2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1017 2BitDac_1/switchNew_0/a_105_20# 2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1017 2BitDac_1/switchNew_0/a_105_21# 2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1018 2BitDac_1/m1_201_n40# 2BitDac_1/switchNew_0/a_86_24# 2BitDac_1/alpha 2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1019 2BitDac_1/alpha 2BitDac_1/switchNew_0/a_105_20# 2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1019 2BitDac_1/alpha 2BitDac_1/switchNew_0/a_105_21# 2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1020 2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1021 2BitDac_1/switchNew_0/a_105_20# 2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1021 2BitDac_1/switchNew_0/a_105_21# 2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1022 2BitDac_1/m1_201_n40# 2BitDac_1/switchNew_0/a_86_24# 2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1023 2BitDac_1/m1_201_n40# 2BitDac_1/switchNew_0/a_105_20# 2BitDac_1/beta 2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1023 2BitDac_1/m1_201_n40# 2BitDac_1/switchNew_0/a_105_21# 2BitDac_1/beta 2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R1 2BitDac_1/beta 2BitDac_1/gamma polyResistor w=2 l=62
 R2 2BitDac_1/alpha 2BitDac_1/beta polyResistor w=2 l=62
 R3 2BitDac_0/delta 2BitDac_1/alpha polyResistor w=2 l=62
-M1024 switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1024 switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1025 switchNew_0/a_105_20# switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1025 switchNew_0/a_105_21# switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1026 V_out3 switchNew_0/a_86_24# 2BitDac_0/V_out2 2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=140 pd=68 as=210 ps=102
-M1027 2BitDac_0/V_out2 switchNew_0/a_105_20# V_out3 gnd nfet w=5 l=2
+M1027 2BitDac_0/V_out2 switchNew_0/a_105_21# V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=86 ps=64
 M1028 switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1029 switchNew_0/a_105_20# switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1029 switchNew_0/a_105_21# switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1030 V_out3 switchNew_0/a_86_24# 2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1031 V_out3 switchNew_0/a_105_20# 2BitDac_1/V_out2 V_out3 pfet w=10 l=2
+M1031 V_out3 switchNew_0/a_105_21# 2BitDac_1/V_out2 V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1032 2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1032 2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1033 2BitDac_0/switchNew_2/a_105_20# 2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1033 2BitDac_0/switchNew_2/a_105_21# 2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1034 2BitDac_0/V_out2 2BitDac_0/switchNew_2/a_86_24# 2BitDac_0/m1_201_n40# 2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1035 2BitDac_0/m1_201_n40# 2BitDac_0/switchNew_2/a_105_20# 2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1035 2BitDac_0/m1_201_n40# 2BitDac_0/switchNew_2/a_105_21# 2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1036 2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1037 2BitDac_0/switchNew_2/a_105_20# 2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1037 2BitDac_0/switchNew_2/a_105_21# 2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1038 2BitDac_0/V_out2 2BitDac_0/switchNew_2/a_86_24# 2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1039 2BitDac_0/V_out2 2BitDac_0/switchNew_2/a_105_20# 2BitDac_0/m1_198_n130# 2BitDac_0/V_out2 pfet w=10 l=2
+M1039 2BitDac_0/V_out2 2BitDac_0/switchNew_2/a_105_21# 2BitDac_0/m1_198_n130# 2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1040 2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1040 2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1041 2BitDac_0/switchNew_1/a_105_20# 2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1041 2BitDac_0/switchNew_1/a_105_21# 2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1042 2BitDac_0/m1_198_n130# 2BitDac_0/switchNew_1/a_86_24# 2BitDac_0/gamma 2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1043 2BitDac_0/gamma 2BitDac_0/switchNew_1/a_105_20# 2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1043 2BitDac_0/gamma 2BitDac_0/switchNew_1/a_105_21# 2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1044 2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1045 2BitDac_0/switchNew_1/a_105_20# 2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1045 2BitDac_0/switchNew_1/a_105_21# 2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1046 2BitDac_0/m1_198_n130# 2BitDac_0/switchNew_1/a_86_24# 2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1047 2BitDac_0/m1_198_n130# 2BitDac_0/switchNew_1/a_105_20# 2BitDac_0/delta 2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1047 2BitDac_0/m1_198_n130# 2BitDac_0/switchNew_1/a_105_21# 2BitDac_0/delta 2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R4 2BitDac_0/gamma 2BitDac_0/delta polyResistor w=2 l=62
-R5 2BitDac_0/beta 2BitDac_0/gamma polyResistor w=2 l=62
-M1048 2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1048 2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1049 2BitDac_0/switchNew_0/a_105_20# 2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1049 2BitDac_0/switchNew_0/a_105_21# 2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1050 2BitDac_0/m1_201_n40# 2BitDac_0/switchNew_0/a_86_24# 2BitDac_0/alpha 2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1051 2BitDac_0/alpha 2BitDac_0/switchNew_0/a_105_20# 2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1051 2BitDac_0/alpha 2BitDac_0/switchNew_0/a_105_21# 2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1052 2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1053 2BitDac_0/switchNew_0/a_105_20# 2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1053 2BitDac_0/switchNew_0/a_105_21# 2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1054 2BitDac_0/m1_201_n40# 2BitDac_0/switchNew_0/a_86_24# 2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1055 2BitDac_0/m1_201_n40# 2BitDac_0/switchNew_0/a_105_20# 2BitDac_0/beta 2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1055 2BitDac_0/m1_201_n40# 2BitDac_0/switchNew_0/a_105_21# 2BitDac_0/beta 2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R5 2BitDac_0/beta 2BitDac_0/gamma polyResistor w=2 l=62
 R6 2BitDac_0/alpha 2BitDac_0/beta polyResistor w=2 l=62
-R7 V3 2BitDac_0/alpha polyResistor w=2 l=62
-C0 2BitDac_1/V_out2 gnd 2.17fF
+R7 R_in3 2BitDac_0/alpha polyResistor w=2 l=62
+C0 2BitDac_1/V_out2 gnd 2.11fF
 C1 2BitDac_0/V_out2 gnd 2.35fF
-C2 Vdd gnd 6.75fF
+C2 VA gnd 12.27fF
 
 
-
-
-
-valpha  V3 Gnd 3.3
-vbeta  Vdd Gnd 3.3
+valpha  R_in3 Gnd 3.3
+vbeta  VA Gnd 3.3
 vzero D0 Gnd pulse(0 1.8 0.1m 60p 60p 0.1m 0.2m)
 vone  D1 Gnd pulse(0 1.8 0.2m 60p 60p 0.2m 0.4m)
 vtwo  D2 Gnd pulse(0 1.8 0.4m 60p 60p 0.4m 0.8m)
+
 
 
 .tran 0.01m 0.8m
@@ -150,6 +148,7 @@ plot V(V_out3) V(D0)
 
 .endc
 .end
+
 
 
 

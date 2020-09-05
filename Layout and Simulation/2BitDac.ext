@@ -1,4 +1,4 @@
-timestamp 1598642508
+timestamp 1599268620
 version 8.1
 tech scmos
 style TSMC0.18um(tsmc18)from:t11b
@@ -6,49 +6,61 @@ scale 1000 1 10
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
 use resistor resistor_0 1 0 62 0 1 9
 use resistor resistor_1 1 0 61 0 1 -39
-use switchNew switchNew_0 1 0 15 0 1 -79
 use resistor resistor_2 1 0 61 0 1 -88
+use switchNew switchNew_0 1 0 15 0 1 -79
 use resistor resistor_3 1 0 61 0 1 -138
 use switchNew switchNew_1 1 0 12 0 1 -169
 use switchNew switchNew_2 1 0 144 0 1 -127
-node "D1!" 1 51.736 213 -91 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 244 130 0 0 0 0 0 0
-node "D0" 4 142.036 78 -133 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 638 326 0 0 0 0 0 0
+node "m6_87_n171#" 2 2594.76 87 -171 m6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1809 612
+node "m5_111_n90#" 4 1668.6 111 -90 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1710 666 0 0
 node "R_out2" 1 157.986 70 -169 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 160 82 0 0 0 0 0 0 0 0 0 0
 equiv "R_out2" "delta"
-node "m1_78_n133#" 0 51.738 78 -133 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0 0 0 0 0
 node "m1_198_n130#" 1 90.126 198 -130 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 54 0 0 0 0 0 0 0 0 0 0
-node "m1_213_n91#" 0 40.056 213 -91 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0 0 0 0 0 0 0 0 0
-node "gamma" 1 303.873 53 -132 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 307 158 0 0 0 0 0 0 0 0 0 0
 node "V_out2" 0 16.692 330 -87 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 12 0 0 0 0 0 0 0 0 0 0
+node "m1_213_n91#" 1 100.121 213 -91 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39 26 35 24 255 134 0 0 0 0 0 0
+node "gamma" 1 303.873 53 -132 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 307 158 0 0 0 0 0 0 0 0 0 0
 node "m1_201_n40#" 1 108.486 201 -40 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84 66 0 0 0 0 0 0 0 0 0 0
-node "m1_82_n43#" 0 47.844 82 -43 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 28 0 0 0 0 0 0 0 0 0 0
+node "m1_78_n133#" 4 267.478 78 -133 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 114 70 70 48 650 330 0 0 0 0 0 0
 node "beta" 1 285.237 53 -82 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 289 148 0 0 0 0 0 0 0 0 0 0
 node "alpha" 1 299.415 53 -33 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 323 148 0 0 0 0 0 0 0 0 0 0
 node "R_in2" 0 62.862 54 15 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 34 0 0 0 0 0 0 0 0 0 0
 substrate "w_n1073741817_n1073741817#" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "D0" "alpha" 7.848
-cap "D0" "m1_82_n43#" 17.576
-cap "D1!" "m1_213_n91#" 17.54
-cap "m1_82_n43#" "beta" 11.7823
-cap "D0" "m1_78_n133#" 19.384
-cap "m1_201_n40#" "D1!" 20.844
-cap "D0" "gamma" 7.848
-cap "D0" "beta" 9.876
-subcap "D0" -86.19
-subcap "beta" -29.433
-cap "D0" "beta" 1.77636e-15
-subcap "D1!" -33.788
-cap "switchNew_2/Vdd!" "D1!" 6.062
-cap "D1!" "switchNew_2/Vdd!" 5.629
-cap "D1!" "switchNew_0/w_152_9#" 2.214
-merge "switchNew_0/a_81_36#" "m1_82_n43#" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
-merge "resistor_1/w_n1073741817_n1073741817#" "resistor_0/w_n1073741817_n1073741817#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "resistor_0/w_n1073741817_n1073741817#" "switchNew_2/gnd!"
-merge "switchNew_2/gnd!" "switchNew_1/gnd!"
-merge "switchNew_1/gnd!" "resistor_3/w_n1073741817_n1073741817#"
-merge "resistor_3/w_n1073741817_n1073741817#" "resistor_2/w_n1073741817_n1073741817#"
-merge "resistor_2/w_n1073741817_n1073741817#" "switchNew_0/gnd!"
-merge "switchNew_0/gnd!" "w_n1073741817_n1073741817#"
+cap "alpha" "m1_78_n133#" 7.848
+cap "m1_78_n133#" "m6_87_n171#" 23.36
+cap "m1_78_n133#" "gamma" 7.848
+cap "m6_87_n171#" "gamma" 23.43
+cap "m1_201_n40#" "m1_213_n91#" 20.844
+cap "m1_78_n133#" "beta" 37.368
+subcap "m6_87_n171#" -1271.59
+subcap "m5_111_n90#" -441.28
+cap "switchNew_0/a_77_24#" "switchNew_1/a_81_36#" 31.28
+cap "switchNew_0/a_77_24#" "switchNew_1/w_71_44#" 296.64
+cap "delta" "switchNew_0/a_77_24#" 43.48
+cap "switchNew_0/a_77_24#" "gamma" 20.05
+cap "switchNew_1/a_86_24#" "switchNew_1/a_105_21#" 5.68434e-14
+cap "beta" "switchNew_1/a_81_36#" 1.77636e-15
+cap "switchNew_0/a_77_24#" "beta" 1.42109e-14
+cap "switchNew_1/w_71_44#" "beta" 15.94
+cap "switchNew_2/w_71_44#" "switchNew_2/a_81_36#" 5.196
+cap "beta" "switchNew_0/a_77_24#" -9.5
+cap "beta" "switchNew_0/w_71_44#" 46.93
+cap "switchNew_0/a_105_21#" "switchNew_0/a_86_24#" 5.68434e-14
+cap "switchNew_0/w_71_44#" "alpha" 127.36
+cap "switchNew_0/a_105_21#" "switchNew_0/w_71_44#" 80.56
+cap "switchNew_0/w_71_44#" "switchNew_0/a_86_24#" 46.16
+cap "switchNew_0/w_152_9#" "m1_213_n91#" 2.214
+cap "m1_213_n91#" "switchNew_2/w_71_44#" 6.495
+merge "resistor_1/w_n1073741817_n1073741817#" "resistor_0/w_n1073741817_n1073741817#" -559.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64 -54
+merge "resistor_0/w_n1073741817_n1073741817#" "switchNew_2/a_77_24#"
+merge "switchNew_2/a_77_24#" "switchNew_1/a_77_24#"
+merge "switchNew_1/a_77_24#" "resistor_3/w_n1073741817_n1073741817#"
+merge "resistor_3/w_n1073741817_n1073741817#" "switchNew_0/a_77_24#"
+merge "switchNew_0/a_77_24#" "m6_87_n171#"
+merge "m6_87_n171#" "resistor_2/w_n1073741817_n1073741817#"
+merge "resistor_2/w_n1073741817_n1073741817#" "w_n1073741817_n1073741817#"
+merge "switchNew_2/w_71_44#" "switchNew_0/w_71_44#" -217.64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 131 -32 0 0
+merge "switchNew_0/w_71_44#" "switchNew_1/w_71_44#"
+merge "switchNew_1/w_71_44#" "m5_111_n90#"
 merge "switchNew_1/w_124_44#" "resistor_3/a" -99.306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -67 -60 0 0 0 0 0 0 0 0 0 0
 merge "resistor_3/a" "resistor_2/b"
 merge "resistor_2/b" "gamma"
@@ -57,14 +69,15 @@ merge "resistor_1/a" "resistor_0/b"
 merge "resistor_0/b" "alpha"
 merge "switchNew_1/a_130_17#" "resistor_3/b" -40.614 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23 -26 0 0 0 0 0 0 0 0 0 0
 merge "resistor_3/b" "delta"
-merge "resistor_1/b" "resistor_2/a" -140.571 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -215 -42 0 0 0 0 0 0 0 0 0 0
-merge "resistor_2/a" "switchNew_0/a_130_17#"
-merge "switchNew_0/a_130_17#" "beta"
+merge "resistor_1/b" "switchNew_0/a_130_17#" -117.636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 -42 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_0/a_130_17#" "resistor_2/a"
+merge "resistor_2/a" "beta"
 merge "switchNew_2/a_130_17#" "switchNew_1/w_152_9#" -16.833 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -14 0 0 0 0 0 0 0 0 0 0
 merge "switchNew_1/w_152_9#" "m1_198_n130#"
 merge "resistor_0/a" "R_in2" -30.459 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -18 0 0 0 0 0 0 0 0 0 0
-merge "switchNew_2/a_81_36#" "m1_213_n91#" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_2/a_81_36#" "m1_213_n91#" -43.558 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 -160 -84 0 0 0 0 0 0
 merge "switchNew_2/w_152_9#" "V_out2" -9.738 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 -8 0 0 0 0 0 0 0 0 0 0
-merge "switchNew_1/a_81_36#" "m1_78_n133#" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_0/a_81_36#" "switchNew_1/a_81_36#" -17.808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "switchNew_1/a_81_36#" "m1_78_n133#"
 merge "switchNew_2/w_124_44#" "switchNew_0/w_152_9#" -24.762 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -20 0 0 0 0 0 0 0 0 0 0
 merge "switchNew_0/w_152_9#" "m1_201_n40#"

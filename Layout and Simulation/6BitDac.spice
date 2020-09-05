@@ -4,1126 +4,1128 @@
 .model pfet PMOS (LEVEL=8 VERSION=3.2 TNOM=27 TOX=4.1E-9 XJ=1E-7 NCH=4.1589E17 VTH0=-0.3938813 K1=0.5479015 K2=0.0360586 K3=0.0993095 K3B=5.7086622 W0=1E-6 NLX=1.313191E-7 DVT0W=0 DVT1W=0 DVT2W=0 DVT0=0.4911363 DVT1=0.2227356 DVT2=0.1 U0=115.6852975 UA=1.505832E-9 UB=1E-21 UC=-1E-10 VSAT=1.329694E5 A0=1.7590478 AGS=0.3641621 B0=3.427126E-7 B1=1.062928E-6 KETA=0.0134667 A1=0.6859506 A2=0.3506788 RDSW=168.5705677 PRWG=0.5 PRWB=-0.4987371 WR=1 WINT=0 LINT=3.028832E-8 XL=0 XW=-1E-8 DWG=-2.349633E-8 DWB=-7.152486E-9 VOFF=-0.0994037 NFACTOR=1.9424315 CIT=0 CDSC=2.4E-4 CDSCD=0 CDSCB=0 ETA0=0.0608072 ETAB=-0.0426148 DSUB=0.7343015 PCLM=3.2579974 PDIBLC1=7.229527E-6 PDIBLC2=0.025389 PDIBLCB=-1E-3 DROUT=0 PSCBE1=1.454878E10 PSCBE2=4.202027E-9 PVAG=15 DELTA=0.01 RSH=7.8 MOBMOD=1 PRT=0 UTE=-1.5 KT1=-0.11 KT1L=0 KT2=0.022 UA1=4.31E-9 UB1=-7.61E-18 UC1=-5.6E-11 AT=3.3E4 WL=0 WLN=1 WW=0 WWN=1 WWL=0 LL=0 LLN=1 LW=0 LWN=1 LWL=0 CAPMOD=2 XPART=0.5 CGDO=6.32E-10 CGSO=6.32E-10 CGBO=1E-12 CJ=1.172138E-3 PB=0.8421173 MJ=0.4109788 CJSW=2.242609E-10 PBSW=0.8 MJSW=0.3752089 CJSWG=4.22E-10 PBSWG=0.8 MJSWG=0.3752089 CF=0 PVTH0=1.888482E-3 PRDSW=11.5315407 PK2=1.559399E-3 WKETA=0.0319301 LKETA=2.955547E-3 PU0=-1.1105313 PUA=-4.62102E-11 PUB=1E-21 PVSAT=50 PETA0=1E-4 PKETA=-4.346368E-3)
 
 .model nfet NMOS (LEVEL=8 VERSION=3.2 TNOM=27 TOX=4.1E-9 XJ=1E-7 NCH=2.3549E17 VTH0=0.3823463 K1=0.5810697 K2=4.774618E-3 K3=0.0431669 K3B=1.1498346 W0=1E-7 NLX=1.910552E-7 DVT0W=0 DVT1W=0 DVT2W=0 DVT0=1.2894824 DVT1=0.3622063 DVT2=0.0713729 U0=280.633249 UA=-1.208537E-9 UB=2.158625E-18 UC=5.342807E-11 VSAT=9.366802E4 A0=1.7593146 AGS=0.3939741 B0=-6.413949E-9 B1=-1E-7 KETA=-5.180424E-4 A1=0 A2=1 RDSW=105.5517558 PRWG=0.5 PRWB=-0.1998871 WR=1 WINT=7.904732E-10 LINT=1.571424E-8 XL=0 XW=-1E-8 DWG=1.297221E-9 DWB=1.479041E-9 VOFF=-0.0955434 NFACTOR=2.4358891 CIT=0 CDSC=2.4E-4 CDSCD=0 CDSCB=0 ETA0=3.104851E-3 ETAB=-2.512384E-5 DSUB=0.0167075 PCLM=0.8073191 PDIBLC1=0.1666161 PDIBLC2=3.112892E-3 PDIBLCB=-0.1 DROUT=0.7875618 PSCBE1=8E10 PSCBE2=9.213635E-10 PVAG=3.85243E-3 DELTA=0.01 RSH=6.7 MOBMOD=1 PRT=0 UTE=-1.5 KT1=-0.11 KT1L=0 KT2=0.022 UA1=4.31E-9 UB1=-7.61E-18 UC1=-5.6E-11 AT=3.3E4 WL=0 WLN=1 WW=0 WWN=1 WWL=0 LL=0 LLN=1 LW=0 LWN=1 LWL=0 CAPMOD=2 XPART=0.5 CGDO=7.08E-10 CGSO=7.08E-10 CGBO=1E-12 CJ=9.68858E-4 PB=0.8 MJ=0.3864502 CJSW=2.512138E-10 PBSW=0.809286 MJSW=0.1060414 CJSWG=3.3E-10 PBSWG=0.809286 MJSWG=0.1060414 CF=0 PVTH0=-1.192722E-3 PRDSW=-5 PK2=6.450505E-5 WKETA=-4.27294E-4 LKETA=-0.0104078 PU0=6.3268729 PUA=2.226552E-11 PUB=0 PVSAT=969.1480157 PETA0=1E-4 PKETA=-1.049509E-3)
-
 .option scale=0.1u
 
-M1000 switchNew_0/a_86_24# D5 Vdd Vdd pfet w=10 l=2
+M1000 switchNew_0/a_86_24# D5 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=8820 ps=4284
-M1001 switchNew_0/a_105_20# switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1001 switchNew_0/a_105_21# switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1002 V_out6 switchNew_0/a_86_24# 5BitDac_0/V_out5 5BitDac_0/V_out5 pfet w=10 l=2
 +  ad=140 pd=68 as=210 ps=102
-M1003 5BitDac_0/V_out5 switchNew_0/a_105_20# V_out6 gnd nfet w=5 l=2
+M1003 5BitDac_0/V_out5 switchNew_0/a_105_21# V_out6 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=86 ps=64
 M1004 switchNew_0/a_86_24# D5 gnd gnd nfet w=5 l=2
-+  ad=35 pd=24 as=4410 ps=3024
-M1005 switchNew_0/a_105_20# switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
++  ad=35 pd=24 as=4445 ps=3048
+M1005 switchNew_0/a_105_21# switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1006 V_out6 switchNew_0/a_86_24# 5BitDac_1/V_out5 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1007 V_out6 switchNew_0/a_105_20# 5BitDac_1/V_out5 V_out6 pfet w=10 l=2
+M1007 V_out6 switchNew_0/a_105_21# 5BitDac_1/V_out5 V_out6 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1008 5BitDac_1/switchNew_0/a_86_24# D4 Vdd Vdd pfet w=10 l=2
+M1008 5BitDac_1/switchNew_0/a_86_24# D4 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1009 5BitDac_1/switchNew_0/a_105_20# 5BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1009 5BitDac_1/switchNew_0/a_105_21# 5BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1010 5BitDac_1/V_out5 5BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/V_out4 5BitDac_1/4BitDac_0/V_out4 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1011 5BitDac_1/4BitDac_0/V_out4 5BitDac_1/switchNew_0/a_105_20# 5BitDac_1/V_out5 gnd nfet w=5 l=2
+M1011 5BitDac_1/4BitDac_0/V_out4 5BitDac_1/switchNew_0/a_105_21# 5BitDac_1/V_out5 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1012 5BitDac_1/switchNew_0/a_86_24# D4 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1013 5BitDac_1/switchNew_0/a_105_20# 5BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1013 5BitDac_1/switchNew_0/a_105_21# 5BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1014 5BitDac_1/V_out5 5BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/V_out4 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1015 5BitDac_1/V_out5 5BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/V_out4 5BitDac_1/V_out5 pfet w=10 l=2
+M1015 5BitDac_1/V_out5 5BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/V_out4 5BitDac_1/V_out5 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1016 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1016 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1017 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1017 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1018 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1019 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1019 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1020 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1021 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1021 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1022 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1023 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 pfet w=10 l=2
+M1023 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1024 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1024 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1025 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1025 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1026 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1027 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1027 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1028 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1029 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1029 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1030 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# R_out6 gnd nfet w=5 l=2
-+  ad=0 pd=0 as=35 ps=24
-M1031 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# R_out6 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# pfet w=10 l=2
-+  ad=0 pd=0 as=70 ps=34
-R0 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma R_out6 polyResistor w=2 l=62
-R1 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/beta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma polyResistor w=2 l=62
-M1032 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1030 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
++  ad=0 pd=0 as=0 ps=0
+M1031 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# gnd 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# pfet w=10 l=2
++  ad=0 pd=0 as=3094 ps=3058
+R0 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma gnd polyResistor w=2 l=62
+M1032 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1033 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1033 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1034 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/alpha 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1035 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/alpha 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1035 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/alpha 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1036 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1037 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1037 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1038 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1039 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/beta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1039 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/beta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R1 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/beta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/gamma polyResistor w=2 l=62
 R2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/alpha 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/beta polyResistor w=2 l=62
 R3 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/delta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/alpha polyResistor w=2 l=62
-M1040 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1040 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1041 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1041 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1042 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1043 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 gnd nfet w=5 l=2
+M1043 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1044 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1045 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1045 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1046 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1047 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 pfet w=10 l=2
+M1047 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 5BitDac_1/4BitDac_1/3BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1048 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1048 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1049 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1049 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1050 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1051 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1051 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1052 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1053 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1053 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1054 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1055 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
+M1055 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1056 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1056 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1057 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1057 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1058 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/gamma 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1059 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/gamma 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1059 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/gamma 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1060 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1061 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1061 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1062 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1063 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/delta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1063 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/delta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R4 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/gamma 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/delta polyResistor w=2 l=62
-R5 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/beta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/gamma polyResistor w=2 l=62
-M1064 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1064 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1065 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1065 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1066 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/alpha 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1067 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/alpha 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1067 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/alpha 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1068 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1069 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1069 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1070 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1071 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/beta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1071 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/beta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R5 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/beta 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/gamma polyResistor w=2 l=62
 R6 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/alpha 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/beta polyResistor w=2 l=62
 R7 5BitDac_1/4BitDac_1/3BitDac_1/R_in3 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/alpha polyResistor w=2 l=62
-M1072 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# D3 Vdd Vdd pfet w=10 l=2
+M1072 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# D3 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1073 5BitDac_1/4BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1073 5BitDac_1/4BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1074 5BitDac_1/4BitDac_1/V_out4 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1075 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 5BitDac_1/4BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/V_out4 gnd nfet w=5 l=2
+M1075 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 5BitDac_1/4BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/V_out4 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1076 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# D3 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1077 5BitDac_1/4BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1077 5BitDac_1/4BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1078 5BitDac_1/4BitDac_1/V_out4 5BitDac_1/4BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1079 5BitDac_1/4BitDac_1/V_out4 5BitDac_1/4BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 5BitDac_1/4BitDac_1/V_out4 pfet w=10 l=2
+M1079 5BitDac_1/4BitDac_1/V_out4 5BitDac_1/4BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 5BitDac_1/4BitDac_1/V_out4 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1080 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1080 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1081 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1081 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1082 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1083 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1083 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1084 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1085 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1085 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1086 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1087 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 pfet w=10 l=2
+M1087 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1088 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1088 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1089 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1089 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1090 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/gamma 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1091 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/gamma 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1091 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/gamma 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1092 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1093 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1093 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1094 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_1/R_in3 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1095 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_1/R_in3 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# pfet w=10 l=2
+M1095 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_1/R_in3 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R8 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/gamma 5BitDac_1/4BitDac_1/3BitDac_1/R_in3 polyResistor w=2 l=62
-R9 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/beta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/gamma polyResistor w=2 l=62
-M1096 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1096 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1097 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1097 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1098 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/alpha 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1099 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/alpha 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1099 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/alpha 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1100 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1101 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1101 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1102 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1103 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/beta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1103 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/beta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R9 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/beta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/gamma polyResistor w=2 l=62
 R10 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/alpha 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/beta polyResistor w=2 l=62
 R11 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/delta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/alpha polyResistor w=2 l=62
-M1104 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1104 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1105 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1105 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1106 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1107 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 gnd nfet w=5 l=2
+M1107 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1108 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1109 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1109 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1110 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1111 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 pfet w=10 l=2
+M1111 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 5BitDac_1/4BitDac_1/3BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1112 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1112 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1113 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1113 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1114 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1115 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1115 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1116 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1117 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1117 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1118 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1119 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
+M1119 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1120 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1120 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1121 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1121 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1122 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/gamma 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1123 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/gamma 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1123 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/gamma 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1124 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1125 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1125 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1126 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1127 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/delta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1127 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/delta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R12 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/gamma 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/delta polyResistor w=2 l=62
-R13 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/beta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/gamma polyResistor w=2 l=62
-M1128 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1128 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1129 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1129 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1130 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/alpha 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1131 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/alpha 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1131 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/alpha 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1132 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1133 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1133 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1134 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1135 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/beta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1135 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/beta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R13 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/beta 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/gamma polyResistor w=2 l=62
 R14 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/alpha 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/beta polyResistor w=2 l=62
 R15 5BitDac_1/4BitDac_1/R_in4 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/alpha polyResistor w=2 l=62
-M1136 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1136 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1137 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1137 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1138 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1139 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1139 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1140 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1141 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1141 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1142 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1143 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 pfet w=10 l=2
+M1143 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1144 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1144 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1145 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1145 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1146 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/gamma 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1147 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/gamma 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1147 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/gamma 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1148 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1149 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1149 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1150 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# 5BitDac_1/4BitDac_1/R_in4 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1151 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_1/R_in4 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# pfet w=10 l=2
+M1151 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_1/R_in4 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R16 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/gamma 5BitDac_1/4BitDac_1/R_in4 polyResistor w=2 l=62
-R17 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/beta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/gamma polyResistor w=2 l=62
-M1152 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1152 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1153 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1153 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1154 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/alpha 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1155 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/alpha 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1155 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/alpha 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1156 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1157 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1157 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1158 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1159 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/beta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1159 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/beta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R17 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/beta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/gamma polyResistor w=2 l=62
 R18 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/alpha 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/beta polyResistor w=2 l=62
 R19 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/delta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/alpha polyResistor w=2 l=62
-M1160 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1160 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1161 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1161 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1162 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1163 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 gnd nfet w=5 l=2
+M1163 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1164 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1165 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1165 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1166 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1167 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 pfet w=10 l=2
+M1167 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 5BitDac_1/4BitDac_0/3BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1168 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1168 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1169 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1169 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1170 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1171 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1171 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1172 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1173 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1173 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1174 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1175 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
+M1175 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1176 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1176 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1177 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1177 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1178 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/gamma 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1179 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/gamma 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1179 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/gamma 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1180 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1181 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1181 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1182 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1183 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/delta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1183 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/delta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R20 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/gamma 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/delta polyResistor w=2 l=62
-R21 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/beta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/gamma polyResistor w=2 l=62
-M1184 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1184 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1185 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1185 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1186 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/alpha 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1187 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/alpha 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1187 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/alpha 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1188 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1189 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1189 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1190 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1191 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/beta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1191 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/beta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R21 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/beta 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/gamma polyResistor w=2 l=62
 R22 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/alpha 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/beta polyResistor w=2 l=62
 R23 5BitDac_1/4BitDac_0/3BitDac_1/R_in3 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/alpha polyResistor w=2 l=62
-M1192 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# D3 Vdd Vdd pfet w=10 l=2
+M1192 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# D3 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1193 5BitDac_1/4BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1193 5BitDac_1/4BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1194 5BitDac_1/4BitDac_0/V_out4 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1195 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 5BitDac_1/4BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/V_out4 gnd nfet w=5 l=2
+M1195 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 5BitDac_1/4BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/V_out4 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1196 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# D3 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1197 5BitDac_1/4BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1197 5BitDac_1/4BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1198 5BitDac_1/4BitDac_0/V_out4 5BitDac_1/4BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1199 5BitDac_1/4BitDac_0/V_out4 5BitDac_1/4BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 5BitDac_1/4BitDac_0/V_out4 pfet w=10 l=2
+M1199 5BitDac_1/4BitDac_0/V_out4 5BitDac_1/4BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 5BitDac_1/4BitDac_0/V_out4 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1200 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1200 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1201 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1201 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1202 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1203 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1203 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1204 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1205 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1205 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1206 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1207 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 pfet w=10 l=2
+M1207 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1208 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1208 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1209 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1209 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1210 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/gamma 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1211 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/gamma 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1211 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/gamma 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1212 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1213 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1213 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1214 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_1/R_in3 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1215 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_1/R_in3 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# pfet w=10 l=2
+M1215 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_1/R_in3 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R24 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/gamma 5BitDac_1/4BitDac_0/3BitDac_1/R_in3 polyResistor w=2 l=62
-R25 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/beta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/gamma polyResistor w=2 l=62
-M1216 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1216 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1217 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1217 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1218 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/alpha 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1219 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/alpha 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1219 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/alpha 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1220 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1221 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1221 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1222 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1223 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/beta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1223 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/beta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R25 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/beta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/gamma polyResistor w=2 l=62
 R26 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/alpha 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/beta polyResistor w=2 l=62
 R27 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/delta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/alpha polyResistor w=2 l=62
-M1224 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1224 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1225 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1225 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1226 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1227 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 gnd nfet w=5 l=2
+M1227 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1228 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1229 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1229 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1230 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1231 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 pfet w=10 l=2
+M1231 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 5BitDac_1/4BitDac_0/3BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1232 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1232 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1233 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1233 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1234 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1235 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1235 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1236 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1237 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1237 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1238 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1239 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
+M1239 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1240 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1240 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1241 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1241 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1242 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/gamma 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1243 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/gamma 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1243 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/gamma 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1244 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1245 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1245 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1246 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1247 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/delta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1247 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/delta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R28 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/gamma 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/delta polyResistor w=2 l=62
-R29 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/beta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/gamma polyResistor w=2 l=62
-M1248 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1248 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1249 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1249 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1250 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/alpha 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1251 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/alpha 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1251 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/alpha 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1252 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1253 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1253 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1254 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1255 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/beta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1255 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/beta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R29 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/beta 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/gamma polyResistor w=2 l=62
 R30 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/alpha 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/beta polyResistor w=2 l=62
 R31 5BitDac_1/R_in5 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/alpha polyResistor w=2 l=62
-M1256 5BitDac_0/switchNew_0/a_86_24# D4 Vdd Vdd pfet w=10 l=2
+M1256 5BitDac_0/switchNew_0/a_86_24# D4 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1257 5BitDac_0/switchNew_0/a_105_20# 5BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1257 5BitDac_0/switchNew_0/a_105_21# 5BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1258 5BitDac_0/V_out5 5BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/V_out4 5BitDac_0/4BitDac_0/V_out4 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1259 5BitDac_0/4BitDac_0/V_out4 5BitDac_0/switchNew_0/a_105_20# 5BitDac_0/V_out5 gnd nfet w=5 l=2
+M1259 5BitDac_0/4BitDac_0/V_out4 5BitDac_0/switchNew_0/a_105_21# 5BitDac_0/V_out5 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1260 5BitDac_0/switchNew_0/a_86_24# D4 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1261 5BitDac_0/switchNew_0/a_105_20# 5BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1261 5BitDac_0/switchNew_0/a_105_21# 5BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1262 5BitDac_0/V_out5 5BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/V_out4 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1263 5BitDac_0/V_out5 5BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/V_out4 5BitDac_0/V_out5 pfet w=10 l=2
+M1263 5BitDac_0/V_out5 5BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/V_out4 5BitDac_0/V_out5 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1264 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1264 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1265 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1265 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1266 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1267 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1267 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1268 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1269 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1269 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1270 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1271 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 pfet w=10 l=2
+M1271 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1272 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1272 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1273 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1273 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1274 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/gamma 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1275 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/gamma 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1275 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/gamma 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1276 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1277 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1277 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1278 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# 5BitDac_1/R_in5 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1279 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_1/R_in5 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# pfet w=10 l=2
+M1279 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_1/R_in5 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R32 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/gamma 5BitDac_1/R_in5 polyResistor w=2 l=62
-R33 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/beta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/gamma polyResistor w=2 l=62
-M1280 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1280 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1281 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1281 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1282 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/alpha 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1283 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/alpha 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1283 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/alpha 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1284 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1285 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1285 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1286 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1287 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/beta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1287 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/beta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R33 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/beta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/gamma polyResistor w=2 l=62
 R34 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/alpha 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/beta polyResistor w=2 l=62
 R35 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/delta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/alpha polyResistor w=2 l=62
-M1288 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1288 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1289 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1289 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1290 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1291 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 gnd nfet w=5 l=2
+M1291 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1292 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1293 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1293 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1294 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1295 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 pfet w=10 l=2
+M1295 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 5BitDac_0/4BitDac_1/3BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1296 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1296 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1297 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1297 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1298 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1299 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1299 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1300 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1301 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1301 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1302 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1303 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
+M1303 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1304 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1304 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1305 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1305 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1306 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/gamma 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1307 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/gamma 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1307 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/gamma 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1308 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1309 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1309 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1310 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1311 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/delta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1311 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/delta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R36 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/gamma 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/delta polyResistor w=2 l=62
-R37 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/beta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/gamma polyResistor w=2 l=62
-M1312 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1312 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1313 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1313 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1314 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/alpha 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1315 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/alpha 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1315 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/alpha 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1316 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1317 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1317 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1318 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1319 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/beta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1319 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/beta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R37 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/beta 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/gamma polyResistor w=2 l=62
 R38 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/alpha 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/beta polyResistor w=2 l=62
 R39 5BitDac_0/4BitDac_1/3BitDac_1/R_in3 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/alpha polyResistor w=2 l=62
-M1320 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# D3 Vdd Vdd pfet w=10 l=2
+M1320 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# D3 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1321 5BitDac_0/4BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1321 5BitDac_0/4BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1322 5BitDac_0/4BitDac_1/V_out4 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1323 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 5BitDac_0/4BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/V_out4 gnd nfet w=5 l=2
+M1323 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 5BitDac_0/4BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/V_out4 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1324 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# D3 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1325 5BitDac_0/4BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1325 5BitDac_0/4BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1326 5BitDac_0/4BitDac_1/V_out4 5BitDac_0/4BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1327 5BitDac_0/4BitDac_1/V_out4 5BitDac_0/4BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 5BitDac_0/4BitDac_1/V_out4 pfet w=10 l=2
+M1327 5BitDac_0/4BitDac_1/V_out4 5BitDac_0/4BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 5BitDac_0/4BitDac_1/V_out4 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1328 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1328 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1329 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1329 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1330 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1331 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1331 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1332 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1333 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1333 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1334 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1335 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 pfet w=10 l=2
+M1335 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1336 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1336 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1337 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1337 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1338 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/gamma 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1339 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/gamma 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1339 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/gamma 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1340 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1341 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1341 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1342 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_1/R_in3 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1343 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_1/R_in3 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# pfet w=10 l=2
+M1343 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_1/R_in3 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R40 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/gamma 5BitDac_0/4BitDac_1/3BitDac_1/R_in3 polyResistor w=2 l=62
-R41 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/beta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/gamma polyResistor w=2 l=62
-M1344 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1344 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1345 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1345 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1346 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/alpha 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1347 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/alpha 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1347 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/alpha 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1348 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1349 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1349 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1350 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1351 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/beta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1351 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/beta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R41 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/beta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/gamma polyResistor w=2 l=62
 R42 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/alpha 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/beta polyResistor w=2 l=62
 R43 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/delta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/alpha polyResistor w=2 l=62
-M1352 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1352 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1353 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1353 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1354 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1355 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 gnd nfet w=5 l=2
+M1355 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1356 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1357 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1357 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1358 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1359 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 pfet w=10 l=2
+M1359 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 5BitDac_0/4BitDac_1/3BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1360 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1360 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1361 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1361 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1362 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1363 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1363 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1364 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1365 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1365 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1366 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1367 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
+M1367 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1368 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1368 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1369 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1369 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1370 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/gamma 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1371 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/gamma 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1371 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/gamma 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1372 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1373 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1373 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1374 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1375 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/delta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1375 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/delta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R44 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/gamma 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/delta polyResistor w=2 l=62
-R45 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/beta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/gamma polyResistor w=2 l=62
-M1376 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1376 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1377 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1377 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1378 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/alpha 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1379 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/alpha 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1379 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/alpha 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1380 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1381 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1381 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1382 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1383 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/beta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1383 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/beta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R45 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/beta 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/gamma polyResistor w=2 l=62
 R46 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/alpha 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/beta polyResistor w=2 l=62
 R47 5BitDac_0/4BitDac_1/R_in4 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/alpha polyResistor w=2 l=62
-M1384 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1384 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1385 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1385 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1386 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1387 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1387 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1388 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1389 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1389 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1390 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1391 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 pfet w=10 l=2
+M1391 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1392 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1392 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1393 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1393 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1394 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/gamma 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1395 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/gamma 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1395 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/gamma 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1396 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1397 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1397 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1398 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_86_24# 5BitDac_0/4BitDac_1/R_in4 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1399 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_1/R_in4 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# pfet w=10 l=2
+M1399 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_1/R_in4 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R48 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/gamma 5BitDac_0/4BitDac_1/R_in4 polyResistor w=2 l=62
-R49 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/beta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/gamma polyResistor w=2 l=62
-M1400 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1400 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1401 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1401 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1402 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/alpha 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1403 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/alpha 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1403 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/alpha 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1404 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1405 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1405 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1406 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1407 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/beta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1407 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/beta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R49 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/beta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/gamma polyResistor w=2 l=62
 R50 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/alpha 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/beta polyResistor w=2 l=62
 R51 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/delta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/alpha polyResistor w=2 l=62
-M1408 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1408 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1409 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1409 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1410 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1411 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 gnd nfet w=5 l=2
+M1411 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1412 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1413 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1413 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1414 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1415 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 pfet w=10 l=2
+M1415 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 5BitDac_0/4BitDac_0/3BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1416 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1416 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1417 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1417 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1418 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1419 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1419 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1420 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1421 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1421 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1422 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1423 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
+M1423 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1424 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1424 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1425 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1425 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1426 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/gamma 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1427 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/gamma 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1427 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/gamma 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1428 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1429 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1429 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1430 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1431 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/delta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1431 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/delta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R52 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/gamma 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/delta polyResistor w=2 l=62
-R53 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/beta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/gamma polyResistor w=2 l=62
-M1432 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1432 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1433 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1433 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1434 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/alpha 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1435 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/alpha 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1435 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/alpha 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1436 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1437 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1437 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1438 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1439 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/beta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1439 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/beta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R53 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/beta 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/gamma polyResistor w=2 l=62
 R54 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/alpha 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/beta polyResistor w=2 l=62
 R55 5BitDac_0/4BitDac_0/3BitDac_1/R_in3 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/alpha polyResistor w=2 l=62
-M1440 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# D3 Vdd Vdd pfet w=10 l=2
+M1440 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# D3 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1441 5BitDac_0/4BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1441 5BitDac_0/4BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1442 5BitDac_0/4BitDac_0/V_out4 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1443 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 5BitDac_0/4BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/V_out4 gnd nfet w=5 l=2
+M1443 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 5BitDac_0/4BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/V_out4 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1444 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# D3 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1445 5BitDac_0/4BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1445 5BitDac_0/4BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1446 5BitDac_0/4BitDac_0/V_out4 5BitDac_0/4BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1447 5BitDac_0/4BitDac_0/V_out4 5BitDac_0/4BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 5BitDac_0/4BitDac_0/V_out4 pfet w=10 l=2
+M1447 5BitDac_0/4BitDac_0/V_out4 5BitDac_0/4BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 5BitDac_0/4BitDac_0/V_out4 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1448 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1448 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1449 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1449 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1450 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=210 pd=102 as=210 ps=102
-M1451 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
+M1451 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=121 ps=88
 M1452 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1453 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1453 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1454 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1455 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 pfet w=10 l=2
+M1455 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1456 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1456 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1457 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1457 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1458 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/gamma 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1459 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/gamma 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
+M1459 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/gamma 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1460 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1461 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1461 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1462 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_1/R_in3 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1463 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_1/R_in3 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# pfet w=10 l=2
+M1463 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_1/R_in3 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R56 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/gamma 5BitDac_0/4BitDac_0/3BitDac_1/R_in3 polyResistor w=2 l=62
-R57 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/beta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/gamma polyResistor w=2 l=62
-M1464 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1464 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1465 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1465 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1466 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/alpha 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1467 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/alpha 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
+M1467 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/alpha 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1468 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1469 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1469 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1470 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1471 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/beta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
+M1471 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/beta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R57 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/beta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/gamma polyResistor w=2 l=62
 R58 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/alpha 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/beta polyResistor w=2 l=62
 R59 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/delta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/alpha polyResistor w=2 l=62
-M1472 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# D2 Vdd Vdd pfet w=10 l=2
+M1472 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# D2 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1473 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1473 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1474 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1475 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 gnd nfet w=5 l=2
+M1475 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1476 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# D2 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1477 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1477 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1478 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd nfet w=5 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1479 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 pfet w=10 l=2
+M1479 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 5BitDac_0/4BitDac_0/3BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 pfet w=10 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1480 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 Vdd Vdd pfet w=10 l=2
+M1480 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1481 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# Vdd Vdd pfet w=10 l=2
+M1481 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1482 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1483 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 gnd nfet w=5 l=2
+M1483 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 gnd nfet w=5 l=2
 +  ad=137 pd=104 as=0 ps=0
 M1484 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# D1 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1485 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
+M1485 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1486 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=0 pd=0 as=121 ps=88
-M1487 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
+M1487 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_2/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 pfet w=10 l=2
 +  ad=0 pd=0 as=210 ps=102
-M1488 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1488 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1489 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# Vdd Vdd pfet w=10 l=2
+M1489 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1490 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/gamma 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/gamma pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1491 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/gamma 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
+M1491 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/gamma 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1492 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1493 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
+M1493 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1494 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/delta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1495 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/delta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# pfet w=10 l=2
+M1495 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_1/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/delta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_198_n130# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
 R60 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/gamma 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/delta polyResistor w=2 l=62
-R61 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/beta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/gamma polyResistor w=2 l=62
-M1496 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 Vdd Vdd pfet w=10 l=2
+M1496 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
-M1497 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# Vdd Vdd pfet w=10 l=2
+M1497 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# VA VA pfet w=10 l=2
 +  ad=70 pd=34 as=0 ps=0
 M1498 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/alpha 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/alpha pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
-M1499 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/alpha 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
+M1499 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/alpha 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# gnd nfet w=5 l=2
 +  ad=51 pd=40 as=0 ps=0
 M1500 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# D0 gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
-M1501 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
+M1501 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# gnd gnd nfet w=5 l=2
 +  ad=35 pd=24 as=0 ps=0
 M1502 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_86_24# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/beta gnd nfet w=5 l=2
 +  ad=0 pd=0 as=35 ps=24
-M1503 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_20# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/beta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
+M1503 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/switchNew_0/a_105_21# 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/beta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/m1_201_n40# pfet w=10 l=2
 +  ad=0 pd=0 as=70 ps=34
+R61 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/beta 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/gamma polyResistor w=2 l=62
 R62 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/alpha 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/beta polyResistor w=2 l=62
 R63 R_in6 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/alpha polyResistor w=2 l=62
-C0 D2 D1 12.16fF
-C1 Vdd D0 2.15fF
-C2 D1 D3 5.93fF
-C3 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd 2.17fF
-C4 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 gnd 2.43fF
-C5 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 gnd 2.35fF
-C6 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 gnd 2.22fF
-C7 5BitDac_0/4BitDac_0/V_out4 gnd 2.30fF
-C8 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd 2.17fF
-C9 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 gnd 2.35fF
-C10 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd 2.17fF
-C11 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 gnd 2.43fF
-C12 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 gnd 2.35fF
-C13 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 gnd 2.22fF
-C14 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd 2.17fF
-C15 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 gnd 2.35fF
-C16 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd 2.17fF
-C17 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 gnd 2.43fF
-C18 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 gnd 2.35fF
-C19 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 gnd 2.22fF
-C20 5BitDac_1/4BitDac_0/V_out4 gnd 2.30fF
-C21 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd 2.17fF
-C22 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 gnd 2.35fF
-C23 D1 gnd 5.79fF
-C24 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd 2.17fF
-C25 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 gnd 2.43fF
-C26 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 gnd 2.35fF
-C27 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 gnd 2.22fF
-C28 D0 gnd 10.16fF
-C29 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd 2.17fF
-C30 D2 gnd 2.65fF
-C31 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 gnd 2.35fF
-C32 Vdd gnd 60.76fF
+C0 VA D3 3.93fF
+C1 D3 D1 2.70fF
+C2 VA D0 2.15fF
+C3 VA D2 2.79fF
+C4 D2 D1 11.28fF
+C5 VA D1 7.62fF
+C6 D1 gnd 9.51fF
+C7 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd 2.11fF
+C8 D2 gnd 7.87fF
+C9 5BitDac_0/4BitDac_0/3BitDac_0/V_out3 gnd 2.43fF
+C10 5BitDac_0/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 gnd 2.35fF
+C11 5BitDac_0/4BitDac_0/3BitDac_1/V_out3 gnd 2.17fF
+C12 5BitDac_0/4BitDac_0/V_out4 gnd 2.39fF
+C13 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd 2.11fF
+C14 5BitDac_0/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 gnd 2.35fF
+C15 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd 2.11fF
+C16 5BitDac_0/4BitDac_1/3BitDac_0/V_out3 gnd 2.43fF
+C17 5BitDac_0/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 gnd 2.36fF
+C18 5BitDac_0/4BitDac_1/3BitDac_1/V_out3 gnd 2.17fF
+C19 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd 2.11fF
+C20 5BitDac_0/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 gnd 2.35fF
+C21 VA gnd 114.20fF
+C22 D0 gnd 13.03fF
+C23 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_1/V_out2 gnd 2.11fF
+C24 5BitDac_1/4BitDac_0/3BitDac_0/V_out3 gnd 2.43fF
+C25 5BitDac_1/4BitDac_0/3BitDac_0/2BitDac_0/V_out2 gnd 2.39fF
+C26 5BitDac_1/4BitDac_0/3BitDac_1/V_out3 gnd 2.17fF
+C27 5BitDac_1/4BitDac_0/V_out4 gnd 2.39fF
+C28 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_1/V_out2 gnd 2.11fF
+C29 5BitDac_1/4BitDac_0/3BitDac_1/2BitDac_0/V_out2 gnd 2.35fF
+C30 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_1/V_out2 gnd 2.11fF
+C31 5BitDac_1/4BitDac_1/3BitDac_0/V_out3 gnd 2.43fF
+C32 5BitDac_1/4BitDac_1/3BitDac_0/2BitDac_0/V_out2 gnd 2.36fF
+C33 5BitDac_1/4BitDac_1/3BitDac_1/V_out3 gnd 2.17fF
+C34 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_1/V_out2 gnd 2.11fF
+C35 5BitDac_1/4BitDac_1/3BitDac_1/2BitDac_0/V_out2 gnd 2.35fF
 
 
 
-
-valpha  R_in6 R_out6 3.3
-vbeta  Vdd Gnd 3.3
+valpha  R_in6 Gnd 3.3
+vbeta  VA Gnd 3.3
 vzero D0 Gnd pulse(0 1.8 0.1m 60p 60p 0.1m 0.2m)
 vone  D1 Gnd pulse(0 1.8 0.2m 60p 60p 0.2m 0.4m)
 vtwo  D2 Gnd pulse(0 1.8 0.4m 60p 60p 0.4m 0.8m)
 vthree D3 Gnd pulse(0 1.8 0.8m 60p 60p 0.8m 1.6m)
 vfour D4 Gnd pulse (0 1.8 1.6m 60p 60p 1.6m 3.2m)
 vfive D5 Gnd pulse (0 1.8 3.2m 60p 60p 3.2m 6.4m)
+
 
 .tran 0.01m 6.4m
 .control

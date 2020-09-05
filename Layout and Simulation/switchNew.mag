@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1598622215
+timestamp 1599222484
 << nwell >>
 rect 71 44 118 71
 rect 124 44 152 71
@@ -8,7 +8,7 @@ rect 152 9 185 31
 << ntransistor >>
 rect 165 53 167 58
 rect 84 24 86 29
-rect 103 20 105 25
+rect 103 21 105 26
 rect 137 17 139 22
 << ptransistor >>
 rect 84 50 86 60
@@ -28,12 +28,12 @@ rect 77 24 84 25
 rect 86 25 88 29
 rect 92 25 93 29
 rect 86 24 93 25
-rect 96 21 97 25
-rect 101 21 103 25
-rect 96 20 103 21
-rect 105 21 107 25
-rect 111 21 112 25
-rect 105 20 112 21
+rect 96 22 97 26
+rect 101 22 103 26
+rect 96 21 103 22
+rect 105 22 107 26
+rect 111 22 112 26
+rect 105 21 112 22
 rect 130 18 131 22
 rect 135 18 137 22
 rect 130 17 137 18
@@ -78,8 +78,8 @@ rect 159 53 163 57
 rect 169 54 173 58
 rect 78 25 82 29
 rect 88 25 92 29
-rect 97 21 101 25
-rect 107 21 111 25
+rect 97 22 101 26
+rect 107 22 111 26
 rect 131 18 135 22
 rect 141 18 145 22
 << pdcontact >>
@@ -92,9 +92,9 @@ rect 141 53 145 57
 rect 159 18 163 22
 rect 169 18 173 22
 << psubstratepcontact >>
-rect 78 12 82 16
-rect 86 12 90 16
-rect 105 12 109 16
+rect 78 13 82 17
+rect 86 13 90 17
+rect 105 13 109 17
 << nsubstratencontact >>
 rect 78 64 82 68
 rect 86 64 90 68
@@ -115,11 +115,11 @@ rect 166 41 167 45
 rect 84 29 86 36
 rect 104 33 105 37
 rect 138 33 139 37
-rect 103 25 105 33
+rect 103 26 105 33
 rect 84 22 86 24
 rect 137 22 139 33
 rect 165 25 167 41
-rect 103 18 105 20
+rect 103 19 105 21
 rect 137 15 139 17
 rect 165 13 167 15
 << polycontact >>
@@ -131,7 +131,8 @@ rect 134 33 138 37
 rect 69 72 130 75
 rect 127 68 130 72
 rect 82 64 86 68
-rect 90 64 105 68
+rect 90 64 99 68
+rect 104 64 105 68
 rect 109 64 111 68
 rect 127 64 131 68
 rect 135 64 173 68
@@ -155,31 +156,44 @@ rect 88 33 100 37
 rect 104 33 134 37
 rect 141 33 173 37
 rect 88 29 92 33
-rect 107 25 111 26
-rect 78 16 82 25
+rect 78 17 82 25
 rect 141 22 145 33
 rect 169 22 173 33
 rect 178 26 182 39
-rect 97 16 101 21
-rect 82 12 86 16
-rect 90 12 105 16
-rect 109 12 110 16
+rect 97 17 101 22
+rect 82 13 86 17
+rect 90 13 91 17
+rect 96 13 105 17
+rect 109 13 110 17
 rect 131 13 135 18
 rect 159 13 163 18
 rect 124 9 163 13
 rect 69 6 127 9
 << m2contact >>
+rect 99 64 104 68
 rect 107 40 111 44
 rect 126 40 130 44
 rect 149 40 153 44
 rect 107 26 111 30
+rect 91 12 96 17
 << metal2 >>
 rect 130 40 149 44
 rect 107 30 111 40
+<< m3contact >>
+rect 99 64 104 68
+rect 91 12 96 17
+<< m4contact >>
+rect 99 64 104 68
+rect 91 12 96 17
+<< m5contact >>
+rect 99 64 104 68
+rect 91 12 96 17
+<< metal5 >>
+rect 99 68 103 81
+<< m6contact >>
+rect 91 12 96 17
+<< metal6 >>
+rect 91 -1 96 12
 << pseudo_rpoly >>
-rect 77 12 78 16
-<< labels >>
-rlabel metal1 103 14 103 14 1 gnd!
-rlabel metal1 84 14 84 14 1 gnd!
-rlabel metal1 94 68 97 68 1 Vdd!
+rect 77 13 78 17
 << end >>
