@@ -143,7 +143,7 @@ The complete circuit of 10-Bit potentiometric DAC is built hierarchically using 
 ## 6. Layout and Simulations 
 
 ### A. Switch Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/Switch.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/sw.JPG)
  
 
 ### B. Resistor Layout
@@ -165,37 +165,37 @@ in the #devices section inside the osu180nm.tech node.
 
 
 ### D. 2-Bit DAC Subcircuit Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/2%20-%20Bit%20DAC%20(2).JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/2.JPG)
 
 
 ### E. 3-Bit DAC Subcircuit Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/3%20-%20Bit%20Dac.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/3.JPG)
 
 ### F. 4-Bit DAC Subcircuit Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/4%20-%20Bit%20DAC.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/4.JPG)
  
 
 ### G. 5-Bit DAC Subcircuit Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/5%20bitdac.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/5.JPG)
 
 
 ### H. 6-Bit DAC Subcircuit Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/6%20-%20BIT%20DAC.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/6.JPG)
 
 ### I. 7-Bit DAC Subcircuit Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/7bitdac.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/7.JPG)
 
 
 ### J. 8-Bit DAC Subcircuit Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/8bitdac.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/8.JPG)
 
 
 ### K. 9-Bit DAC Subcircuit Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/9BitDac.JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/9.JPG)
 
 
 ### L. 10-Bit-DAC Layout
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/10bit%20Dac%20(2).JPG)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/10.JPG)
 
 size = 635.1 x 684.8 microns
 
