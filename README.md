@@ -21,9 +21,9 @@ A DAC is a building block required to convert digital data into analog.
   * [H. 8-Bit DAC subcircuit](#h-8-bit-dac-subcircuit)
   * [I. 9-Bit DAC subcircuit](#i-9-bit-dac-subcircuit)
   * [J. 10-Bit-DAC](#j-10-bit-dac)
-  * [Vout v/s Digital Code Graph for 10-Bit DAC](#vout-v-s-digital-code-graph-for-10-bit-dac)
-  * [INL(LSB) v/s Digital Code Graph for 10-Bit DAC](#inl-lsb--v-s-digital-code-graph-for-10-bit-dac)
-  * [DNL(LSB) v/s Digital Code Graph for 10-Bit DAC](#dnl-lsb--v-s-digital-code-graph-for-10-bit-dac)
+  * [Vout v/s Digital Code Graph for 10-Bit DAC](https://github.com/xzlashutosh/avsddac_3v3#vout-vs-digital-code-graph-for-10-bit-dac)
+  * [INL(LSB) v/s Digital Code Graph for 10-Bit DAC](https://github.com/xzlashutosh/avsddac_3v3#inllsb-vs-digital-code-graph-for-10-bit-dac)
+  * [DNL(LSB) v/s Digital Code Graph for 10-Bit DAC](https://github.com/xzlashutosh/avsddac_3v3#dnllsb-vs-digital-code-graph-for-10-bit-dac)
 - [6. Layout and Simulations](#6-layout-and-simulations)
   * [A. Switch Layout](#a-switch-layout)
   * [B. Resistor Layout](#b-resistor-layout)
@@ -165,7 +165,7 @@ value = 3.12nF
 in the #devices section inside the osu180nm.tech node.
 
 #### Limitation of osu180 PDK - 
-As the capacitor layer, or poly2 none are present in osu180nm, the capacitor can not be built in a straight forward way.The above given modifications in the technology node were done to simulate the characteristics of the circuit. Here, defining the capacitor in a certain manner gives the required characteristics in the circuit.
+As the capacitor layer, or poly2 none are present in osu180nm, the capacitor can not be built in a straight forward way using the osu PDK.The above given modifications in the technology node were done to simulate the characteristics of the circuit. Here, defining the capacitor in a certain manner gives the required characteristics in the circuit.
 
 ### D. 2-Bit DAC Subcircuit Layout
 ![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/LayoutImages/2.JPG)
@@ -207,16 +207,16 @@ size = 635.1 x 684.8 microns
 
 ### Vout v/s Digital Code Graph for 10-Bit DAC
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/OutputWaveform.png)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3#vout-vs-digital-code-graph-for-10-bit-dac-1)
 
 
 ### INL(LSB) v/s Digital Code Graph for 10-Bit DAC
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/INL(LSB)-postLayout.png)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3#inllsb-vs-digital-code-graph-for-10-bit-dac-1)
 
 ### DNL(LSB) v/s Digital Code Graph for 10-Bit DAC
 
-![Alt Text](https://github.com/xzlashutosh/avsddac_3v3/blob/master/Layout%20and%20Simulation/DNL(LSB)-postLayout.png)
+![Alt Text](https://github.com/xzlashutosh/avsddac_3v3#dnllsb-vs-digital-code-graph-for-10-bit-dac-1)
 
 ### For post-layout simulation please follow [this](https://github.com/xzlashutosh/avsddac_3v3#for-post-layout-simulation--).
 
