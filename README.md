@@ -84,7 +84,7 @@ Given below is the block diagram of the DAC -
 | :---:  | :-: | :-: |
 |DNL| -0.999893345 LSB to 2.03065020 LSB | -1.182952606 LSB to 2.380283181 LSB |
 |INL| -1.953038429 LSB to 0.527216491 LSB| -3.698306813 LSB to 0.181125461 LSB |
-|Gain Error| 0 V | 0 V |
+|Gain Error| 0 | 0 |
 |Offset Error| 2.12E-07 V | 2.14E-07 V |
 
 ## 4. EDA Tools Used 
