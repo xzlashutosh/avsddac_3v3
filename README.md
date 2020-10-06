@@ -80,7 +80,7 @@ Given below is the block diagram of the DAC -
 |RES|Resolution| |10||bit|T=27C|
 |VFS|Full Scale Voltage|0| |3.291627| V |T=27C|
 
-| Parameter| Pre-layout (LSB)| Post-Layout (LSB)
+| Parameter| Pre-layout | Post-Layout |
 | :---:  | :-: | :-: |
 |DNL| -0.999893345 LSB to 2.03065020 LSB | -1.182952606 LSB to 2.380283181 LSB |
 |INL| -1.953038429 LSB to 0.527216491 LSB| -3.698306813 LSB to 0.181125461 LSB |
